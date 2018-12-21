@@ -5,7 +5,7 @@ class ThreeD extends Component {
 
   render() {
     return (
-      <div>ThreeD</div>
+      <h3>ThreeD</h3>
     );
   }
 

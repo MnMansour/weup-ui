@@ -5,7 +5,7 @@ class MapNavigation extends Component {
 
   render() {
     return (
-      <div>MapNavigation</div>
+      <h2>MapNavigation</h2>
     );
   }
 

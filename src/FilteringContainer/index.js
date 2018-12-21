@@ -5,7 +5,7 @@ class Filtering extends Component {
 
   render() {
     return (
-      <div>Filtering</div>
+      <h1>Filtering</h1>
     );
   }
 
