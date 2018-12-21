@@ -9,9 +9,9 @@ class App extends Component {
   render() {
     return (
       <div className={styles.App}>
-        <Filtering/>
-        <MapNavigation/>
-        <ThreeD/>
+        <div className={styles.Filtering}><Filtering/></div>
+        <div className={styles.MapNavigation}><MapNavigation/></div>
+        <ThreeD />
       </div>
     );
   }
