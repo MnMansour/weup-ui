@@ -356,24 +356,13 @@ function addWeupSpots(pPlugID)
 React Event plugin starts here
 ********************************/
 
-var category;
-
-function addReactEvent(pPlugID) {
-  krpano = getKrPanoInstance();
-
-  krpano.set("events.onnewscene", "js(  newSceneLoaded());");
-
-  category = new Category("new Category name", [], false);
+function hasLookedToSubcategorySpot(){
+	console.log("We have just looked at a subcategory spot");
 }
 
-function Category(name, subCategories, visible) {
-  this.name = name;
-  this.subCategories = subCategories;
-  this.visible = visible;
-}
-
-//Hide the group switcher if we are in a scene from an ignored group
-function newSceneLoaded() {
-  console.log("New scene has been started. Category name: " + category.name);
-  updateReactState(category);
+function rotateToSpot(horizontalCoordinates) {
+  krpano.set("endautorotation", hasLookedToSubcategorySpot);
+	   
+  var fov = Number(krpano.get("view.fov"));
+  krpano.call("lookto("+horizontalCoordinates[1]+", "+horizontalCoordinates[0]+","+fov+",,,,endautorotation)");
 }
