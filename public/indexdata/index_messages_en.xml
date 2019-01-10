@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano>
+
+<!-- ************************ -->
+<!--         Messages         -->
+<!-- ************************ -->
+
+  <data name="en_project_title"><![CDATA[New Project]]></data>
+
+
+
+  <data name="en_pano47_title"><![CDATA[01]]></data>
+
+
+  <data name="en_pano48_title"><![CDATA[02]]></data>
+
+
+  <data name="en_pano49_title"><![CDATA[03]]></data>
+
+
+  <data name="en_pano50_title"><![CDATA[04]]></data>
+
+
+  <data name="en_pano51_title"><![CDATA[05]]></data>
+
+
+  <data name="en_pano52_title"><![CDATA[06]]></data>
+
+
+  <data name="en_pano53_title"><![CDATA[07]]></data>
+
+
+  <data name="en_pano54_title"><![CDATA[08]]></data>
+
+
+  <data name="en_pano55_title"><![CDATA[09]]></data>
+
+
+  <data name="en_pano56_title"><![CDATA[10]]></data>
+
+
+  <data name="en_pano57_title"><![CDATA[11]]></data>
+
+
+  <data name="en_pano58_title"><![CDATA[12]]></data>
+
+
+	<data name="en_spotmap98_tooltip"><![CDATA[]]></data>
+	<data name="en_spotmap99_tooltip"><![CDATA[]]></data>
+	<data name="en_spotmap100_tooltip"><![CDATA[]]></data>
+	<data name="en_spotmap101_tooltip"><![CDATA[]]></data>
+	<data name="en_spotmap102_tooltip"><![CDATA[]]></data>
+	<data name="en_spotmap103_tooltip"><![CDATA[]]></data>
+	<data name="en_spotmap104_tooltip"><![CDATA[]]></data>
+	<data name="en_spotmap105_tooltip"><![CDATA[]]></data>
+	<data name="en_spotmap106_tooltip"><![CDATA[]]></data>
+	<data name="en_spotmap107_tooltip"><![CDATA[]]></data>
+	<data name="en_spotmap108_tooltip"><![CDATA[]]></data>
+	<data name="en_spotmap109_tooltip"><![CDATA[]]></data>
+
+
+
+
+  <data name="en_garrowsnavhotspots_style"><![CDATA[IconDefaultPointSpotStyle]]></data>
+  <data name="en_garrowsnavhotspots_style_vertical"><![CDATA[IconDefaultPointSpotStyle1]]></data>
+  <data name="en_garrowsfloatingarrow_alpha"><![CDATA[0.5]]></data>
+  <data name="en_garrowsnavpoints_alpha"><![CDATA[0.2]]></data>
+  <data name="en_garrowsnavpoints_onhover_alpha"><![CDATA[0.6]]></data>
+  <data name="en_garrowschevrons_alpha"><![CDATA[0.5]]></data>
+  <data name="en_garrowschevronsborder_alpha"><![CDATA[0.5]]></data>
+  <data name="en_garrowschevrons_shadow_alpha"><![CDATA[0.5]]></data>
+  <data name="en_garrowschevrons_shadow_border_alpha"><![CDATA[0.5]]></data>
+  <data name="en_garrowsdisabled_panoids"><![CDATA[]]></data>
+  <data name="en_garrowsfloating_arrow_text"><![CDATA[Show/Hide floating arrow]]></data>
+  <data name="en_garrowschevron_arrows_text"><![CDATA[Show/Hide chevron arrows]]></data>
+  <data name="en_garrowsnavigation_hotspots_text"><![CDATA[Show/Hide navigation hotspots]]></data>
+  <data name="en_garrowsfloating_arrow_autohide_text"><![CDATA[Auto hide floating arrow]]></data>
+  <data name="en_garrowspassword"><![CDATA[garrows]]></data>
+  <data name="en_autogarrowstooltips_template"><![CDATA[%panoid1% -> %panoid2%, %panoname1% -> %panoname2%, %azimuth%, %distance%]]></data>
+  <data name="en_WeupSpotsdevModeName"><![CDATA[devmode]]></data>
+
+
+  <data name="en_vr_setup_hmd0"><![CDATA[SELECT YOUR HMD]]></data>
+  <data name="en_vr_setup_advanced"><![CDATA[ADVANCED SETTINGS]]></data>
+  <data name="en_vr_setup_title"><![CDATA[WEB VR SETTINGS]]></data>
+  <data name="en_vr_setup_dvn1"><![CDATA[Device:]]></data>
+  <data name="en_vr_setup_siz1"><![CDATA[Screen size:]]></data>
+  <data name="en_vr_setup_ipd1"><![CDATA[IPD:]]></data>
+  <data name="en_vr_setup_hmd1"><![CDATA[HMD:]]></data>
+  <data name="en_vr_setup_hmd3"><![CDATA[Customize]]></data>
+  <data name="en_vr_setup_cal"><![CDATA[Calibrate gyroscope]]></data>
+  <data name="en_vr_setup_sav"><![CDATA[SAVE]]></data>
+  <data name="en_vr_setup_rst"><![CDATA[RESET]]></data>
+  <data name="en_vr_setup_simple"><![CDATA[SIMPLE]]></data>
+  <data name="en_vr_setup_cls"><![CDATA[CLOSE]]></data>
+  <data name="en_vr_setup_m31"><![CDATA[HMD SETTINGS]]></data>
+  <data name="en_vr_setup_fov1"><![CDATA[FOV:]]></data>
+  <data name="en_vr_setup_dst1"><![CDATA[Distortion:]]></data>
+  <data name="en_vr_setup_d2tx"><![CDATA[Distortion 2:]]></data>
+  <data name="en_vr_setup_vig1"><![CDATA[Vignette:]]></data>
+  <data name="en_vr_setup_cac1"><![CDATA[Chromatic aberration:]]></data>
+  <data name="en_vr_setup_olp1"><![CDATA[Overlap:]]></data>
+  <data name="en_vr_setup_m35"><![CDATA[RETURN]]></data>
+  <data name="en_vr_setup_cb1"><![CDATA[GYROSCOPE]]></data>
+  <data name="en_vr_setup_cb2"><![CDATA[Place the device on a flat and[br]stable surface and tab CALIBRATE[br]to correct a gyroscope drifting.]]></data>
+  <data name="en_vr_setup_cb3"><![CDATA[CALIBRATE]]></data>
+  <data name="en_vr_setup_cb4"><![CDATA[RESET]]></data>
+  <data name="en_vr_setup_cb5"><![CDATA[RETURN]]></data>
+  <data name="en_vr_setup_cb6"><![CDATA[Calibrating...]]></data>
+  <data name="en_vr_setup_cb7"><![CDATA[Successful calibration]]></data>
+  <data name="en_vr_setup_cb8"><![CDATA[Calibration failed]]></data>
+  <data name="en_vr_setup_unavailable"><![CDATA[VR mode[br]is unavailable on your device]]></data>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</krpano>

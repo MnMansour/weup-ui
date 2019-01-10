@@ -1,0 +1,227 @@
+<krpano>
+<events name="autogarrowsevents" keep="true" onxmlcomplete="autogarrows_init()" />
+<action name="autogarrows_init">
+
+<!-- pano47 to pano48 | _01 to _02 -->
+if(xml.scene == 'pano47',addhotspot(autogarrowshotspot_pano47_1);set(hotspot[autogarrowshotspot_pano47_1].ath, 87.47);set(hotspot[autogarrowshotspot_pano47_1].atv, 0);set(hotspot[autogarrowshotspot_pano47_1].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano47_1].onclick, onclickautogarrowshotspot_pano47_1);set(hotspot[autogarrowshotspot_pano47_1].onhover, "");set(hotspot[autogarrowshotspot_pano47_1].onout, "");set(hotspot[autogarrowshotspot_pano47_1].visible, false);set(hotspot[autogarrowshotspot_pano47_1].tag, point);set(hotspot[autogarrowshotspot_pano47_1].zorder, 3);set(hotspot[autogarrowshotspot_pano47_1].tooltip, pano48_pano47_tooltip););
+
+<!-- pano47 to pano50 | _01 to _04 -->
+if(xml.scene == 'pano47',addhotspot(autogarrowshotspot_pano47_2);set(hotspot[autogarrowshotspot_pano47_2].ath, 176.61);set(hotspot[autogarrowshotspot_pano47_2].atv, 0);set(hotspot[autogarrowshotspot_pano47_2].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano47_2].onclick, onclickautogarrowshotspot_pano47_2);set(hotspot[autogarrowshotspot_pano47_2].onhover, "");set(hotspot[autogarrowshotspot_pano47_2].onout, "");set(hotspot[autogarrowshotspot_pano47_2].visible, false);set(hotspot[autogarrowshotspot_pano47_2].tag, point);set(hotspot[autogarrowshotspot_pano47_2].zorder, 3);set(hotspot[autogarrowshotspot_pano47_2].tooltip, pano50_pano47_tooltip););
+
+<!-- pano48 to pano47 | _02 to _01 -->
+if(xml.scene == 'pano48',addhotspot(autogarrowshotspot_pano48_3);set(hotspot[autogarrowshotspot_pano48_3].ath, -92.53);set(hotspot[autogarrowshotspot_pano48_3].atv, 0);set(hotspot[autogarrowshotspot_pano48_3].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano48_3].onclick, onclickautogarrowshotspot_pano48_3);set(hotspot[autogarrowshotspot_pano48_3].onhover, "");set(hotspot[autogarrowshotspot_pano48_3].onout, "");set(hotspot[autogarrowshotspot_pano48_3].visible, false);set(hotspot[autogarrowshotspot_pano48_3].tag, point);set(hotspot[autogarrowshotspot_pano48_3].zorder, 3);set(hotspot[autogarrowshotspot_pano48_3].tooltip, pano47_pano48_tooltip););
+
+<!-- pano48 to pano49 | _02 to _03 -->
+if(xml.scene == 'pano48',addhotspot(autogarrowshotspot_pano48_4);set(hotspot[autogarrowshotspot_pano48_4].ath, 89.43);set(hotspot[autogarrowshotspot_pano48_4].atv, 0);set(hotspot[autogarrowshotspot_pano48_4].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano48_4].onclick, onclickautogarrowshotspot_pano48_4);set(hotspot[autogarrowshotspot_pano48_4].onhover, "");set(hotspot[autogarrowshotspot_pano48_4].onout, "");set(hotspot[autogarrowshotspot_pano48_4].visible, false);set(hotspot[autogarrowshotspot_pano48_4].tag, point);set(hotspot[autogarrowshotspot_pano48_4].zorder, 3);set(hotspot[autogarrowshotspot_pano48_4].tooltip, pano49_pano48_tooltip););
+
+<!-- pano48 to pano51 | _02 to _05 -->
+if(xml.scene == 'pano48',addhotspot(autogarrowshotspot_pano48_5);set(hotspot[autogarrowshotspot_pano48_5].ath, -179.26);set(hotspot[autogarrowshotspot_pano48_5].atv, 0);set(hotspot[autogarrowshotspot_pano48_5].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano48_5].onclick, onclickautogarrowshotspot_pano48_5);set(hotspot[autogarrowshotspot_pano48_5].onhover, "");set(hotspot[autogarrowshotspot_pano48_5].onout, "");set(hotspot[autogarrowshotspot_pano48_5].visible, false);set(hotspot[autogarrowshotspot_pano48_5].tag, point);set(hotspot[autogarrowshotspot_pano48_5].zorder, 3);set(hotspot[autogarrowshotspot_pano48_5].tooltip, pano51_pano48_tooltip););
+
+<!-- pano49 to pano48 | _03 to _02 -->
+if(xml.scene == 'pano49',addhotspot(autogarrowshotspot_pano49_6);set(hotspot[autogarrowshotspot_pano49_6].ath, -90.56);set(hotspot[autogarrowshotspot_pano49_6].atv, 0);set(hotspot[autogarrowshotspot_pano49_6].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano49_6].onclick, onclickautogarrowshotspot_pano49_6);set(hotspot[autogarrowshotspot_pano49_6].onhover, "");set(hotspot[autogarrowshotspot_pano49_6].onout, "");set(hotspot[autogarrowshotspot_pano49_6].visible, false);set(hotspot[autogarrowshotspot_pano49_6].tag, point);set(hotspot[autogarrowshotspot_pano49_6].zorder, 3);set(hotspot[autogarrowshotspot_pano49_6].tooltip, pano48_pano49_tooltip););
+
+<!-- pano49 to pano52 | _03 to _06 -->
+if(xml.scene == 'pano49',addhotspot(autogarrowshotspot_pano49_7);set(hotspot[autogarrowshotspot_pano49_7].ath, -179.64);set(hotspot[autogarrowshotspot_pano49_7].atv, 0);set(hotspot[autogarrowshotspot_pano49_7].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano49_7].onclick, onclickautogarrowshotspot_pano49_7);set(hotspot[autogarrowshotspot_pano49_7].onhover, "");set(hotspot[autogarrowshotspot_pano49_7].onout, "");set(hotspot[autogarrowshotspot_pano49_7].visible, false);set(hotspot[autogarrowshotspot_pano49_7].tag, point);set(hotspot[autogarrowshotspot_pano49_7].zorder, 3);set(hotspot[autogarrowshotspot_pano49_7].tooltip, pano52_pano49_tooltip););
+
+<!-- pano50 to pano47 | _04 to _01 -->
+if(xml.scene == 'pano50',addhotspot(autogarrowshotspot_pano50_8);set(hotspot[autogarrowshotspot_pano50_8].ath, -3.39);set(hotspot[autogarrowshotspot_pano50_8].atv, 0);set(hotspot[autogarrowshotspot_pano50_8].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano50_8].onclick, onclickautogarrowshotspot_pano50_8);set(hotspot[autogarrowshotspot_pano50_8].onhover, "");set(hotspot[autogarrowshotspot_pano50_8].onout, "");set(hotspot[autogarrowshotspot_pano50_8].visible, false);set(hotspot[autogarrowshotspot_pano50_8].tag, point);set(hotspot[autogarrowshotspot_pano50_8].zorder, 3);set(hotspot[autogarrowshotspot_pano50_8].tooltip, pano47_pano50_tooltip););
+
+<!-- pano50 to pano51 | _04 to _05 -->
+if(xml.scene == 'pano50',addhotspot(autogarrowshotspot_pano50_9);set(hotspot[autogarrowshotspot_pano50_9].ath, 89.88);set(hotspot[autogarrowshotspot_pano50_9].atv, 0);set(hotspot[autogarrowshotspot_pano50_9].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano50_9].onclick, onclickautogarrowshotspot_pano50_9);set(hotspot[autogarrowshotspot_pano50_9].onhover, "");set(hotspot[autogarrowshotspot_pano50_9].onout, "");set(hotspot[autogarrowshotspot_pano50_9].visible, false);set(hotspot[autogarrowshotspot_pano50_9].tag, point);set(hotspot[autogarrowshotspot_pano50_9].zorder, 3);set(hotspot[autogarrowshotspot_pano50_9].tooltip, pano51_pano50_tooltip););
+
+<!-- pano50 to pano53 | _04 to _07 -->
+if(xml.scene == 'pano50',addhotspot(autogarrowshotspot_pano50_10);set(hotspot[autogarrowshotspot_pano50_10].ath, 178.84);set(hotspot[autogarrowshotspot_pano50_10].atv, 0);set(hotspot[autogarrowshotspot_pano50_10].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano50_10].onclick, onclickautogarrowshotspot_pano50_10);set(hotspot[autogarrowshotspot_pano50_10].onhover, "");set(hotspot[autogarrowshotspot_pano50_10].onout, "");set(hotspot[autogarrowshotspot_pano50_10].visible, false);set(hotspot[autogarrowshotspot_pano50_10].tag, point);set(hotspot[autogarrowshotspot_pano50_10].zorder, 3);set(hotspot[autogarrowshotspot_pano50_10].tooltip, pano53_pano50_tooltip););
+
+<!-- pano51 to pano48 | _05 to _02 -->
+if(xml.scene == 'pano51',addhotspot(autogarrowshotspot_pano51_11);set(hotspot[autogarrowshotspot_pano51_11].ath, 0.74);set(hotspot[autogarrowshotspot_pano51_11].atv, 0);set(hotspot[autogarrowshotspot_pano51_11].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano51_11].onclick, onclickautogarrowshotspot_pano51_11);set(hotspot[autogarrowshotspot_pano51_11].onhover, "");set(hotspot[autogarrowshotspot_pano51_11].onout, "");set(hotspot[autogarrowshotspot_pano51_11].visible, false);set(hotspot[autogarrowshotspot_pano51_11].tag, point);set(hotspot[autogarrowshotspot_pano51_11].zorder, 3);set(hotspot[autogarrowshotspot_pano51_11].tooltip, pano48_pano51_tooltip););
+
+<!-- pano51 to pano50 | _05 to _04 -->
+if(xml.scene == 'pano51',addhotspot(autogarrowshotspot_pano51_12);set(hotspot[autogarrowshotspot_pano51_12].ath, -90.12);set(hotspot[autogarrowshotspot_pano51_12].atv, 0);set(hotspot[autogarrowshotspot_pano51_12].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano51_12].onclick, onclickautogarrowshotspot_pano51_12);set(hotspot[autogarrowshotspot_pano51_12].onhover, "");set(hotspot[autogarrowshotspot_pano51_12].onout, "");set(hotspot[autogarrowshotspot_pano51_12].visible, false);set(hotspot[autogarrowshotspot_pano51_12].tag, point);set(hotspot[autogarrowshotspot_pano51_12].zorder, 3);set(hotspot[autogarrowshotspot_pano51_12].tooltip, pano50_pano51_tooltip););
+
+<!-- pano51 to pano52 | _05 to _06 -->
+if(xml.scene == 'pano51',addhotspot(autogarrowshotspot_pano51_13);set(hotspot[autogarrowshotspot_pano51_13].ath, 90.56);set(hotspot[autogarrowshotspot_pano51_13].atv, 0);set(hotspot[autogarrowshotspot_pano51_13].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano51_13].onclick, onclickautogarrowshotspot_pano51_13);set(hotspot[autogarrowshotspot_pano51_13].onhover, "");set(hotspot[autogarrowshotspot_pano51_13].onout, "");set(hotspot[autogarrowshotspot_pano51_13].visible, false);set(hotspot[autogarrowshotspot_pano51_13].tag, point);set(hotspot[autogarrowshotspot_pano51_13].zorder, 3);set(hotspot[autogarrowshotspot_pano51_13].tooltip, pano52_pano51_tooltip););
+
+<!-- pano51 to pano54 | _05 to _08 -->
+if(xml.scene == 'pano51',addhotspot(autogarrowshotspot_pano51_14);set(hotspot[autogarrowshotspot_pano51_14].ath, 178.30);set(hotspot[autogarrowshotspot_pano51_14].atv, 0);set(hotspot[autogarrowshotspot_pano51_14].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano51_14].onclick, onclickautogarrowshotspot_pano51_14);set(hotspot[autogarrowshotspot_pano51_14].onhover, "");set(hotspot[autogarrowshotspot_pano51_14].onout, "");set(hotspot[autogarrowshotspot_pano51_14].visible, false);set(hotspot[autogarrowshotspot_pano51_14].tag, point);set(hotspot[autogarrowshotspot_pano51_14].zorder, 3);set(hotspot[autogarrowshotspot_pano51_14].tooltip, pano54_pano51_tooltip););
+
+<!-- pano52 to pano49 | _06 to _03 -->
+if(xml.scene == 'pano52',addhotspot(autogarrowshotspot_pano52_15);set(hotspot[autogarrowshotspot_pano52_15].ath, 0.36);set(hotspot[autogarrowshotspot_pano52_15].atv, 0);set(hotspot[autogarrowshotspot_pano52_15].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano52_15].onclick, onclickautogarrowshotspot_pano52_15);set(hotspot[autogarrowshotspot_pano52_15].onhover, "");set(hotspot[autogarrowshotspot_pano52_15].onout, "");set(hotspot[autogarrowshotspot_pano52_15].visible, false);set(hotspot[autogarrowshotspot_pano52_15].tag, point);set(hotspot[autogarrowshotspot_pano52_15].zorder, 3);set(hotspot[autogarrowshotspot_pano52_15].tooltip, pano49_pano52_tooltip););
+
+<!-- pano52 to pano51 | _06 to _05 -->
+if(xml.scene == 'pano52',addhotspot(autogarrowshotspot_pano52_16);set(hotspot[autogarrowshotspot_pano52_16].ath, -89.44);set(hotspot[autogarrowshotspot_pano52_16].atv, 0);set(hotspot[autogarrowshotspot_pano52_16].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano52_16].onclick, onclickautogarrowshotspot_pano52_16);set(hotspot[autogarrowshotspot_pano52_16].onhover, "");set(hotspot[autogarrowshotspot_pano52_16].onout, "");set(hotspot[autogarrowshotspot_pano52_16].visible, false);set(hotspot[autogarrowshotspot_pano52_16].tag, point);set(hotspot[autogarrowshotspot_pano52_16].zorder, 3);set(hotspot[autogarrowshotspot_pano52_16].tooltip, pano51_pano52_tooltip););
+
+<!-- pano52 to pano55 | _06 to _09 -->
+if(xml.scene == 'pano52',addhotspot(autogarrowshotspot_pano52_17);set(hotspot[autogarrowshotspot_pano52_17].ath, -179.31);set(hotspot[autogarrowshotspot_pano52_17].atv, 0);set(hotspot[autogarrowshotspot_pano52_17].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano52_17].onclick, onclickautogarrowshotspot_pano52_17);set(hotspot[autogarrowshotspot_pano52_17].onhover, "");set(hotspot[autogarrowshotspot_pano52_17].onout, "");set(hotspot[autogarrowshotspot_pano52_17].visible, false);set(hotspot[autogarrowshotspot_pano52_17].tag, point);set(hotspot[autogarrowshotspot_pano52_17].zorder, 3);set(hotspot[autogarrowshotspot_pano52_17].tooltip, pano55_pano52_tooltip););
+
+<!-- pano53 to pano50 | _07 to _04 -->
+if(xml.scene == 'pano53',addhotspot(autogarrowshotspot_pano53_18);set(hotspot[autogarrowshotspot_pano53_18].ath, -1.16);set(hotspot[autogarrowshotspot_pano53_18].atv, 0);set(hotspot[autogarrowshotspot_pano53_18].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano53_18].onclick, onclickautogarrowshotspot_pano53_18);set(hotspot[autogarrowshotspot_pano53_18].onhover, "");set(hotspot[autogarrowshotspot_pano53_18].onout, "");set(hotspot[autogarrowshotspot_pano53_18].visible, false);set(hotspot[autogarrowshotspot_pano53_18].tag, point);set(hotspot[autogarrowshotspot_pano53_18].zorder, 3);set(hotspot[autogarrowshotspot_pano53_18].tooltip, pano50_pano53_tooltip););
+
+<!-- pano53 to pano54 | _07 to _08 -->
+if(xml.scene == 'pano53',addhotspot(autogarrowshotspot_pano53_19);set(hotspot[autogarrowshotspot_pano53_19].ath, 90.24);set(hotspot[autogarrowshotspot_pano53_19].atv, 0);set(hotspot[autogarrowshotspot_pano53_19].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano53_19].onclick, onclickautogarrowshotspot_pano53_19);set(hotspot[autogarrowshotspot_pano53_19].onhover, "");set(hotspot[autogarrowshotspot_pano53_19].onout, "");set(hotspot[autogarrowshotspot_pano53_19].visible, false);set(hotspot[autogarrowshotspot_pano53_19].tag, point);set(hotspot[autogarrowshotspot_pano53_19].zorder, 3);set(hotspot[autogarrowshotspot_pano53_19].tooltip, pano54_pano53_tooltip););
+
+<!-- pano53 to pano56 | _07 to _10 -->
+if(xml.scene == 'pano53',addhotspot(autogarrowshotspot_pano53_20);set(hotspot[autogarrowshotspot_pano53_20].ath, -179.82);set(hotspot[autogarrowshotspot_pano53_20].atv, 0);set(hotspot[autogarrowshotspot_pano53_20].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano53_20].onclick, onclickautogarrowshotspot_pano53_20);set(hotspot[autogarrowshotspot_pano53_20].onhover, "");set(hotspot[autogarrowshotspot_pano53_20].onout, "");set(hotspot[autogarrowshotspot_pano53_20].visible, false);set(hotspot[autogarrowshotspot_pano53_20].tag, point);set(hotspot[autogarrowshotspot_pano53_20].zorder, 3);set(hotspot[autogarrowshotspot_pano53_20].tooltip, pano56_pano53_tooltip););
+
+<!-- pano54 to pano51 | _08 to _05 -->
+if(xml.scene == 'pano54',addhotspot(autogarrowshotspot_pano54_21);set(hotspot[autogarrowshotspot_pano54_21].ath, -1.70);set(hotspot[autogarrowshotspot_pano54_21].atv, 0);set(hotspot[autogarrowshotspot_pano54_21].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano54_21].onclick, onclickautogarrowshotspot_pano54_21);set(hotspot[autogarrowshotspot_pano54_21].onhover, "");set(hotspot[autogarrowshotspot_pano54_21].onout, "");set(hotspot[autogarrowshotspot_pano54_21].visible, false);set(hotspot[autogarrowshotspot_pano54_21].tag, point);set(hotspot[autogarrowshotspot_pano54_21].zorder, 3);set(hotspot[autogarrowshotspot_pano54_21].tooltip, pano51_pano54_tooltip););
+
+<!-- pano54 to pano53 | _08 to _07 -->
+if(xml.scene == 'pano54',addhotspot(autogarrowshotspot_pano54_22);set(hotspot[autogarrowshotspot_pano54_22].ath, -89.76);set(hotspot[autogarrowshotspot_pano54_22].atv, 0);set(hotspot[autogarrowshotspot_pano54_22].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano54_22].onclick, onclickautogarrowshotspot_pano54_22);set(hotspot[autogarrowshotspot_pano54_22].onhover, "");set(hotspot[autogarrowshotspot_pano54_22].onout, "");set(hotspot[autogarrowshotspot_pano54_22].visible, false);set(hotspot[autogarrowshotspot_pano54_22].tag, point);set(hotspot[autogarrowshotspot_pano54_22].zorder, 3);set(hotspot[autogarrowshotspot_pano54_22].tooltip, pano53_pano54_tooltip););
+
+<!-- pano54 to pano55 | _08 to _09 -->
+if(xml.scene == 'pano54',addhotspot(autogarrowshotspot_pano54_23);set(hotspot[autogarrowshotspot_pano54_23].ath, 89.30);set(hotspot[autogarrowshotspot_pano54_23].atv, 0);set(hotspot[autogarrowshotspot_pano54_23].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano54_23].onclick, onclickautogarrowshotspot_pano54_23);set(hotspot[autogarrowshotspot_pano54_23].onhover, "");set(hotspot[autogarrowshotspot_pano54_23].onout, "");set(hotspot[autogarrowshotspot_pano54_23].visible, false);set(hotspot[autogarrowshotspot_pano54_23].tag, point);set(hotspot[autogarrowshotspot_pano54_23].zorder, 3);set(hotspot[autogarrowshotspot_pano54_23].tooltip, pano55_pano54_tooltip););
+
+<!-- pano54 to pano57 | _08 to _11 -->
+if(xml.scene == 'pano54',addhotspot(autogarrowshotspot_pano54_24);set(hotspot[autogarrowshotspot_pano54_24].ath, 180.00);set(hotspot[autogarrowshotspot_pano54_24].atv, 0);set(hotspot[autogarrowshotspot_pano54_24].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano54_24].onclick, onclickautogarrowshotspot_pano54_24);set(hotspot[autogarrowshotspot_pano54_24].onhover, "");set(hotspot[autogarrowshotspot_pano54_24].onout, "");set(hotspot[autogarrowshotspot_pano54_24].visible, false);set(hotspot[autogarrowshotspot_pano54_24].tag, point);set(hotspot[autogarrowshotspot_pano54_24].zorder, 3);set(hotspot[autogarrowshotspot_pano54_24].tooltip, pano57_pano54_tooltip););
+
+<!-- pano55 to pano52 | _09 to _06 -->
+if(xml.scene == 'pano55',addhotspot(autogarrowshotspot_pano55_25);set(hotspot[autogarrowshotspot_pano55_25].ath, 0.69);set(hotspot[autogarrowshotspot_pano55_25].atv, 0);set(hotspot[autogarrowshotspot_pano55_25].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano55_25].onclick, onclickautogarrowshotspot_pano55_25);set(hotspot[autogarrowshotspot_pano55_25].onhover, "");set(hotspot[autogarrowshotspot_pano55_25].onout, "");set(hotspot[autogarrowshotspot_pano55_25].visible, false);set(hotspot[autogarrowshotspot_pano55_25].tag, point);set(hotspot[autogarrowshotspot_pano55_25].zorder, 3);set(hotspot[autogarrowshotspot_pano55_25].tooltip, pano52_pano55_tooltip););
+
+<!-- pano55 to pano54 | _09 to _08 -->
+if(xml.scene == 'pano55',addhotspot(autogarrowshotspot_pano55_26);set(hotspot[autogarrowshotspot_pano55_26].ath, -90.70);set(hotspot[autogarrowshotspot_pano55_26].atv, 0);set(hotspot[autogarrowshotspot_pano55_26].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano55_26].onclick, onclickautogarrowshotspot_pano55_26);set(hotspot[autogarrowshotspot_pano55_26].onhover, "");set(hotspot[autogarrowshotspot_pano55_26].onout, "");set(hotspot[autogarrowshotspot_pano55_26].visible, false);set(hotspot[autogarrowshotspot_pano55_26].tag, point);set(hotspot[autogarrowshotspot_pano55_26].zorder, 3);set(hotspot[autogarrowshotspot_pano55_26].tooltip, pano54_pano55_tooltip););
+
+<!-- pano55 to pano58 | _09 to _12 -->
+if(xml.scene == 'pano55',addhotspot(autogarrowshotspot_pano55_27);set(hotspot[autogarrowshotspot_pano55_27].ath, 179.40);set(hotspot[autogarrowshotspot_pano55_27].atv, 0);set(hotspot[autogarrowshotspot_pano55_27].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano55_27].onclick, onclickautogarrowshotspot_pano55_27);set(hotspot[autogarrowshotspot_pano55_27].onhover, "");set(hotspot[autogarrowshotspot_pano55_27].onout, "");set(hotspot[autogarrowshotspot_pano55_27].visible, false);set(hotspot[autogarrowshotspot_pano55_27].tag, point);set(hotspot[autogarrowshotspot_pano55_27].zorder, 3);set(hotspot[autogarrowshotspot_pano55_27].tooltip, pano58_pano55_tooltip););
+
+<!-- pano56 to pano53 | _10 to _07 -->
+if(xml.scene == 'pano56',addhotspot(autogarrowshotspot_pano56_28);set(hotspot[autogarrowshotspot_pano56_28].ath, 0.18);set(hotspot[autogarrowshotspot_pano56_28].atv, 0);set(hotspot[autogarrowshotspot_pano56_28].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano56_28].onclick, onclickautogarrowshotspot_pano56_28);set(hotspot[autogarrowshotspot_pano56_28].onhover, "");set(hotspot[autogarrowshotspot_pano56_28].onout, "");set(hotspot[autogarrowshotspot_pano56_28].visible, false);set(hotspot[autogarrowshotspot_pano56_28].tag, point);set(hotspot[autogarrowshotspot_pano56_28].zorder, 3);set(hotspot[autogarrowshotspot_pano56_28].tooltip, pano53_pano56_tooltip););
+
+<!-- pano56 to pano57 | _10 to _11 -->
+if(xml.scene == 'pano56',addhotspot(autogarrowshotspot_pano56_29);set(hotspot[autogarrowshotspot_pano56_29].ath, 89.03);set(hotspot[autogarrowshotspot_pano56_29].atv, 0);set(hotspot[autogarrowshotspot_pano56_29].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano56_29].onclick, onclickautogarrowshotspot_pano56_29);set(hotspot[autogarrowshotspot_pano56_29].onhover, "");set(hotspot[autogarrowshotspot_pano56_29].onout, "");set(hotspot[autogarrowshotspot_pano56_29].visible, false);set(hotspot[autogarrowshotspot_pano56_29].tag, point);set(hotspot[autogarrowshotspot_pano56_29].zorder, 3);set(hotspot[autogarrowshotspot_pano56_29].tooltip, pano57_pano56_tooltip););
+
+<!-- pano57 to pano54 | _11 to _08 -->
+if(xml.scene == 'pano57',addhotspot(autogarrowshotspot_pano57_30);set(hotspot[autogarrowshotspot_pano57_30].ath, 0.00);set(hotspot[autogarrowshotspot_pano57_30].atv, 0);set(hotspot[autogarrowshotspot_pano57_30].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano57_30].onclick, onclickautogarrowshotspot_pano57_30);set(hotspot[autogarrowshotspot_pano57_30].onhover, "");set(hotspot[autogarrowshotspot_pano57_30].onout, "");set(hotspot[autogarrowshotspot_pano57_30].visible, false);set(hotspot[autogarrowshotspot_pano57_30].tag, point);set(hotspot[autogarrowshotspot_pano57_30].zorder, 3);set(hotspot[autogarrowshotspot_pano57_30].tooltip, pano54_pano57_tooltip););
+
+<!-- pano57 to pano56 | _11 to _10 -->
+if(xml.scene == 'pano57',addhotspot(autogarrowshotspot_pano57_31);set(hotspot[autogarrowshotspot_pano57_31].ath, -90.96);set(hotspot[autogarrowshotspot_pano57_31].atv, 0);set(hotspot[autogarrowshotspot_pano57_31].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano57_31].onclick, onclickautogarrowshotspot_pano57_31);set(hotspot[autogarrowshotspot_pano57_31].onhover, "");set(hotspot[autogarrowshotspot_pano57_31].onout, "");set(hotspot[autogarrowshotspot_pano57_31].visible, false);set(hotspot[autogarrowshotspot_pano57_31].tag, point);set(hotspot[autogarrowshotspot_pano57_31].zorder, 3);set(hotspot[autogarrowshotspot_pano57_31].tooltip, pano56_pano57_tooltip););
+
+<!-- pano57 to pano58 | _11 to _12 -->
+if(xml.scene == 'pano57',addhotspot(autogarrowshotspot_pano57_32);set(hotspot[autogarrowshotspot_pano57_32].ath, 90.92);set(hotspot[autogarrowshotspot_pano57_32].atv, 0);set(hotspot[autogarrowshotspot_pano57_32].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano57_32].onclick, onclickautogarrowshotspot_pano57_32);set(hotspot[autogarrowshotspot_pano57_32].onhover, "");set(hotspot[autogarrowshotspot_pano57_32].onout, "");set(hotspot[autogarrowshotspot_pano57_32].visible, false);set(hotspot[autogarrowshotspot_pano57_32].tag, point);set(hotspot[autogarrowshotspot_pano57_32].zorder, 3);set(hotspot[autogarrowshotspot_pano57_32].tooltip, pano58_pano57_tooltip););
+
+<!-- pano58 to pano55 | _12 to _09 -->
+if(xml.scene == 'pano58',addhotspot(autogarrowshotspot_pano58_33);set(hotspot[autogarrowshotspot_pano58_33].ath, -0.60);set(hotspot[autogarrowshotspot_pano58_33].atv, 0);set(hotspot[autogarrowshotspot_pano58_33].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano58_33].onclick, onclickautogarrowshotspot_pano58_33);set(hotspot[autogarrowshotspot_pano58_33].onhover, "");set(hotspot[autogarrowshotspot_pano58_33].onout, "");set(hotspot[autogarrowshotspot_pano58_33].visible, false);set(hotspot[autogarrowshotspot_pano58_33].tag, point);set(hotspot[autogarrowshotspot_pano58_33].zorder, 3);set(hotspot[autogarrowshotspot_pano58_33].tooltip, pano55_pano58_tooltip););
+
+<!-- pano58 to pano57 | _12 to _11 -->
+if(xml.scene == 'pano58',addhotspot(autogarrowshotspot_pano58_34);set(hotspot[autogarrowshotspot_pano58_34].ath, -89.07);set(hotspot[autogarrowshotspot_pano58_34].atv, 0);set(hotspot[autogarrowshotspot_pano58_34].style, IconDefaultPointSpotStyle);set(hotspot[autogarrowshotspot_pano58_34].onclick, onclickautogarrowshotspot_pano58_34);set(hotspot[autogarrowshotspot_pano58_34].onhover, "");set(hotspot[autogarrowshotspot_pano58_34].onout, "");set(hotspot[autogarrowshotspot_pano58_34].visible, false);set(hotspot[autogarrowshotspot_pano58_34].tag, point);set(hotspot[autogarrowshotspot_pano58_34].zorder, 3);set(hotspot[autogarrowshotspot_pano58_34].tooltip, pano57_pano58_tooltip););
+
+</action>
+
+<!-- pano47 to pano48 | _01 to _02 -->
+<action name="onclickautogarrowshotspot_pano47_1">mainloadscene(pano48);</action>
+
+<!-- pano47 to pano50 | _01 to _04 -->
+<action name="onclickautogarrowshotspot_pano47_2">mainloadscene(pano50);</action>
+
+<!-- pano48 to pano47 | _02 to _01 -->
+<action name="onclickautogarrowshotspot_pano48_3">mainloadscene(pano47);</action>
+
+<!-- pano48 to pano49 | _02 to _03 -->
+<action name="onclickautogarrowshotspot_pano48_4">mainloadscene(pano49);</action>
+
+<!-- pano48 to pano51 | _02 to _05 -->
+<action name="onclickautogarrowshotspot_pano48_5">mainloadscene(pano51);</action>
+
+<!-- pano49 to pano48 | _03 to _02 -->
+<action name="onclickautogarrowshotspot_pano49_6">mainloadscene(pano48);</action>
+
+<!-- pano49 to pano52 | _03 to _06 -->
+<action name="onclickautogarrowshotspot_pano49_7">mainloadscene(pano52);</action>
+
+<!-- pano50 to pano47 | _04 to _01 -->
+<action name="onclickautogarrowshotspot_pano50_8">mainloadscene(pano47);</action>
+
+<!-- pano50 to pano51 | _04 to _05 -->
+<action name="onclickautogarrowshotspot_pano50_9">mainloadscene(pano51);</action>
+
+<!-- pano50 to pano53 | _04 to _07 -->
+<action name="onclickautogarrowshotspot_pano50_10">mainloadscene(pano53);</action>
+
+<!-- pano51 to pano48 | _05 to _02 -->
+<action name="onclickautogarrowshotspot_pano51_11">mainloadscene(pano48);</action>
+
+<!-- pano51 to pano50 | _05 to _04 -->
+<action name="onclickautogarrowshotspot_pano51_12">mainloadscene(pano50);</action>
+
+<!-- pano51 to pano52 | _05 to _06 -->
+<action name="onclickautogarrowshotspot_pano51_13">mainloadscene(pano52);</action>
+
+<!-- pano51 to pano54 | _05 to _08 -->
+<action name="onclickautogarrowshotspot_pano51_14">mainloadscene(pano54);</action>
+
+<!-- pano52 to pano49 | _06 to _03 -->
+<action name="onclickautogarrowshotspot_pano52_15">mainloadscene(pano49);</action>
+
+<!-- pano52 to pano51 | _06 to _05 -->
+<action name="onclickautogarrowshotspot_pano52_16">mainloadscene(pano51);</action>
+
+<!-- pano52 to pano55 | _06 to _09 -->
+<action name="onclickautogarrowshotspot_pano52_17">mainloadscene(pano55);</action>
+
+<!-- pano53 to pano50 | _07 to _04 -->
+<action name="onclickautogarrowshotspot_pano53_18">mainloadscene(pano50);</action>
+
+<!-- pano53 to pano54 | _07 to _08 -->
+<action name="onclickautogarrowshotspot_pano53_19">mainloadscene(pano54);</action>
+
+<!-- pano53 to pano56 | _07 to _10 -->
+<action name="onclickautogarrowshotspot_pano53_20">mainloadscene(pano56);</action>
+
+<!-- pano54 to pano51 | _08 to _05 -->
+<action name="onclickautogarrowshotspot_pano54_21">mainloadscene(pano51);</action>
+
+<!-- pano54 to pano53 | _08 to _07 -->
+<action name="onclickautogarrowshotspot_pano54_22">mainloadscene(pano53);</action>
+
+<!-- pano54 to pano55 | _08 to _09 -->
+<action name="onclickautogarrowshotspot_pano54_23">mainloadscene(pano55);</action>
+
+<!-- pano54 to pano57 | _08 to _11 -->
+<action name="onclickautogarrowshotspot_pano54_24">mainloadscene(pano57);</action>
+
+<!-- pano55 to pano52 | _09 to _06 -->
+<action name="onclickautogarrowshotspot_pano55_25">mainloadscene(pano52);</action>
+
+<!-- pano55 to pano54 | _09 to _08 -->
+<action name="onclickautogarrowshotspot_pano55_26">mainloadscene(pano54);</action>
+
+<!-- pano55 to pano58 | _09 to _12 -->
+<action name="onclickautogarrowshotspot_pano55_27">mainloadscene(pano58);</action>
+
+<!-- pano56 to pano53 | _10 to _07 -->
+<action name="onclickautogarrowshotspot_pano56_28">mainloadscene(pano53);</action>
+
+<!-- pano56 to pano57 | _10 to _11 -->
+<action name="onclickautogarrowshotspot_pano56_29">mainloadscene(pano57);</action>
+
+<!-- pano57 to pano54 | _11 to _08 -->
+<action name="onclickautogarrowshotspot_pano57_30">mainloadscene(pano54);</action>
+
+<!-- pano57 to pano56 | _11 to _10 -->
+<action name="onclickautogarrowshotspot_pano57_31">mainloadscene(pano56);</action>
+
+<!-- pano57 to pano58 | _11 to _12 -->
+<action name="onclickautogarrowshotspot_pano57_32">mainloadscene(pano58);</action>
+
+<!-- pano58 to pano55 | _12 to _09 -->
+<action name="onclickautogarrowshotspot_pano58_33">mainloadscene(pano55);</action>
+
+<!-- pano58 to pano57 | _12 to _11 -->
+<action name="onclickautogarrowshotspot_pano58_34">mainloadscene(pano57);</action>
+
+
+
+<action name="showpanospotsaction">
+	if (tour_displayspots, showpanopointspots(););
+</action>
+
+<action name="hidepanospotsaction">
+	hidepanopointspots();
+</action>
+
+<action name="showpanopointspots">
+</action>
+
+<action name="hidepanopointspots">
+</action>
+
+</krpano>
