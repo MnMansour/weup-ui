@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import styles from './hotspot.module.css';
+import styles from './hotspot.module.scss';
 
 import placeholder from '../assets/icons/placeholder.jpeg';
 

@@ -5,7 +5,7 @@ import _ from 'lodash'
 import {choseSubCategory, onHoverSubCategory, unHoverSubCategory} from '../redux/actions/notifications';
 import Hotspot from '../Hotspot';
 
-import styles from "./hotspots.module.css";
+import styles from "./hotspots.module.scss";
 
 class Hotspots extends Component {
 

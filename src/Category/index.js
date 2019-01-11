@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import classNames from 'classnames';
 import {choseSubCategory, onHoverSubCategory, unHoverSubCategory} from '../redux/actions/notifications';
 import SubCategory from '../SubCategory';
-import styles from "./category.module.css";
+import styles from "./category.module.scss";
 
 class Category extends Component {
 

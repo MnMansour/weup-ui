@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import styles from "./sub_category.module.css";
+import styles from "./sub_category.module.scss";
 
 import placeholder from '../assets/icons/placeholder.jpg';
 

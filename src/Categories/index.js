@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import Category from '../Category';
 import {choseCategory, choseSubCategory} from '../redux/actions/notifications';
 
-import styles from "./categories.module.css";
+import styles from "./categories.module.scss";
 import expandLess from '../assets/icons/expand_less.svg';
 import expandMore from '../assets/icons/expand_more.svg';
 import filterList from '../assets/icons/filter_list.svg';

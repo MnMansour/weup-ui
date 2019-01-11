@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import _ from 'lodash';
 //import classNames from 'classnames';
 import {choseSubCategory} from '../redux/actions/notifications';
-import styles from "./sub_category_details.module.css";
+import styles from "./sub_category_details.module.scss";
 
 import close from '../assets/icons/close.svg';
 import placeholder from '../assets/icons/placeholder.jpg';
