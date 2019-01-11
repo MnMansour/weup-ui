@@ -1,5 +1,8 @@
 
 .sub_category_details{
+  position: absolute;
+  top: 8px;
+  right: 256px;
   width: 336px;
   max-height: calc(100vh - 16px);
   margin-right: 8px;
@@ -9,7 +12,7 @@
   animation: fadeIn ease-in ;
   animation-fill-mode: forwards;
   animation-duration: 0.3s;
-  z-index: 1;
+  z-index: 100;
 }
 @keyframes fadeIn {
    from {
@@ -47,7 +50,6 @@
 .sub_category_details_general {
   padding: 8px;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
-  margin-bottom: 2px;
 }
 
 .sub_category_details_general_field {

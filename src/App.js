@@ -11,12 +11,10 @@ class App extends Component {
   render() {
 
     return (
-      <div>
+      <div className="horizontalCoordinates">
         {this.props.list.categories && <div>
-          <div className="Filters">
             <SubCategoryDetails/>
             <Categories/>
-          </div>
           <Hotspots/>
         </div>}
 

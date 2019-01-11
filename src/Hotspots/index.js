@@ -11,7 +11,7 @@ class Hotspots extends Component {
 
   getHotspots = (categoryName) => {
     if(categoryName) {
-      const {list, subCategoryHover, chosenSubCategory, choseSubCategory, onHoverSubCategory, unHoverSubCategory, rotateDone} = this.props;
+      const {list, subCategoryHover, chosenSubCategory, onHoverSubCategory, unHoverSubCategory, rotateDone} = this.props;
 
       const category = _.find(list.categories, ['name', categoryName])
       return category.subcategories.map((item, i)=> (
@@ -20,7 +20,7 @@ class Hotspots extends Component {
           data={item}
           subCategoryHover={subCategoryHover}
           chosenSubCategory={chosenSubCategory}
-          onChoseSubCategory={choseSubCategory}
+          onChoseSubCategory={this.onChoseSubCategory}
           onHover={onHoverSubCategory}
           unHover={unHoverSubCategory}
           rotateDone={rotateDone}
@@ -32,8 +32,15 @@ class Hotspots extends Component {
     }
   }
 
+  onChoseSubCategory = (name, horizontalCoordinates) => {
+    this.props.choseSubCategory(name);
+    window.rotateToSpot(horizontalCoordinates)
+  }
+
+
+
   render() {
-    
+
     const getHotspots = this.getHotspots(this.props.chosenCategory)
 
     return (

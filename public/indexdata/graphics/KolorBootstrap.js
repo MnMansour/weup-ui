@@ -36,7 +36,7 @@ jQuery(document).ready(function() {
 	//kolorBrowserDetect.browser : Browser string
 	//kolorBrowserDetect.version : Browser version
 	//kolorBrowserDetect.OS : Platform OS
-	
+
 	//add fullscreen
 	kolorFullscreen = new ktools.Fullscreen(document.getElementById("tourDIV"));
 	kolorFullscreen.supportsFullscreen();
@@ -171,7 +171,7 @@ function getKrValue(identifier, type) {
 	if ( typeof identifier == "undefined" ){
 		return identifier;
 	}
-	
+
 	if(getKrPanoInstance() !== null)
 	{
 		if(getKrPanoInstance().get(identifier) == null) {
@@ -209,7 +209,7 @@ function invokePluginFunction(pluginName, functionName) {
 	if ( debug ) {
 		console.log("invokePluginFunction("+pluginName+", "+functionName+")");
 	}
-	
+
 	var plugin = ktools.KolorPluginList.getInstance().getPlugin(pluginName);
 	if (plugin == null) {
 		if ( debug ) { console.log("invokePluginFunction: plugin instance doesn't exist"); }
@@ -237,28 +237,28 @@ function invokePluginFunction(pluginName, functionName) {
 /**
  * @function
  * @description This function is called when krpano is ready.
- * The ready state of krpano is told by its event onready (in fact it's not fully ready, included XML are not necessarily loaded) 
+ * The ready state of krpano is told by its event onready (in fact it's not fully ready, included XML are not necessarily loaded)
  * @return {void}
  */
 function eventKrpanoLoaded (isWebVr) {
 	if ( debug ) {
 		console.log('krpano is loaded');
 	}
-	
+
 	if (krpanoLoaded) { return false; }
-	
+
 	tourLanguage = getKrValue("tour_language","string")
 	if(typeof tourLanguage == "undefined"){
 		tourLanguage = 'en';
 	}
 	ktools.I18N.getInstance().initLanguage(tourLanguage, crossDomainTargetUrl+'indexdata/index_messages_','.xml');
 	krpanoLoaded = true;
-	
+
 	if(isWebVr){
-	
-	
+
+
 	}else{
-	
+
 	addReactEvent('reactEvent');addWeupSpots('WeupSpots');
 	}
 }
@@ -271,7 +271,7 @@ function eventKrpanoLoaded (isWebVr) {
 function eventUnloadPlugins () {
 	resetValuesForPlugins();
 
-	
+
 }
 
 /**
@@ -296,7 +296,7 @@ function eventTourStarted () {
 	if ( debug ) {
 		console.log('tour is started');
 	}
-	
+
 	isTourStarted = true;
 }
 
@@ -309,7 +309,7 @@ function eventTourChangeLanguage (pLang) {
 	if ( debug ) {
 		console.log('change tour language : '+pLang);
 	}
-	
+
 	ktools.I18N.getInstance().initLanguage(pLang, crossDomainTargetUrl+'indexdata/index_messages_','.xml');
 }
 
@@ -336,18 +336,18 @@ var devModeString;
 var devModeTimeout;
 
 function addWeupSpots(pPlugID)
-{	
+{
 	krpano = getKrPanoInstance();
-	
+
 	pluginRenderOrder = getKrValue("ptplugin["+pPlugID+"].settings.option[zorder].value", "int");
 	defaultCameraAltitude = getKrValue("ptplugin["+pPlugID+"].settings.option[defaultCameraAltitude].value", "int");
-	
+
 	pluginsUrl = getKrValue("ptplugin["+pPlugID+"].settings.option[pluginsUrl].url", "string");
 	pluginUrl = getKrValue("ptplugin["+pPlugID+"].settings.option[pluginUrl].url", "string");
-	
+
 	nearClip = getKrValue("ptplugin["+pPlugID+"].settings.option[nearClip].value", "int");
 	farClip = getKrValue("ptplugin["+pPlugID+"].settings.option[farClip].value", "int");
-	
+
 	devModeString = getKrValue("ptplugin["+pPlugID+"].settings.option[devModeString].value", "string");
 	devModeTimeout = getKrValue("ptplugin["+pPlugID+"].settings.option[devModeTimeout].value", "int");
 };
@@ -358,11 +358,12 @@ React Event plugin starts here
 
 function hasLookedToSubcategorySpot(){
 	console.log("We have just looked at a subcategory spot");
+	rotateToSpotDone(true)
 }
 
 function rotateToSpot(horizontalCoordinates) {
   krpano.set("endautorotation", hasLookedToSubcategorySpot);
-	   
+	rotateToSpotDone(false)
   var fov = Number(krpano.get("view.fov"));
   krpano.call("lookto("+horizontalCoordinates[1]+", "+horizontalCoordinates[0]+","+fov+",,,,endautorotation)");
 }

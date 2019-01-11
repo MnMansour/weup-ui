@@ -271,11 +271,9 @@ function krpanoplugin(){
     	//@@Update
 	function update_scene()
 	{
-    console.log('Hellow');
 		if (!firstRun) //If values have been set atleast once
 		{
 			updateScreenCoordinates();
-      console.log('Hellow');
       updateReactState(categoriesJson.categories)
 		}
 	}
@@ -320,12 +318,10 @@ function krpanoplugin(){
 	//@@newScene
 	function newScene()
 	{
-
-    console.log('hi');
 		if(firstRun) //This is only run at the first new scene
 		{
 			iterateAllPositions();
-            updateScreenCoordinates();
+      updateScreenCoordinates();
 		}
 		firstRun = false;
 	};

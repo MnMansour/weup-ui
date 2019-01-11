@@ -5,7 +5,7 @@ import styles from './hotspot.module.css';
 import placeholder from '../assets/icons/placeholder.jpeg';
 
 
-const Hotspot = ({ data:{name, screenCoordinates}, chosenSubCategory, subCategoryHover, onChoseSubCategory, onHover, unHover, rotateDone}) => (
+const Hotspot = ({ data:{name, screenCoordinates, horizontalCoordinates}, chosenSubCategory, subCategoryHover, onChoseSubCategory, onHover, unHover, rotateDone}) => (
   <div  className={classNames(
       styles.Hotspot,
       {[styles.Hotspot_shine]: (name === chosenSubCategory) && rotateDone}
@@ -18,7 +18,7 @@ const Hotspot = ({ data:{name, screenCoordinates}, chosenSubCategory, subCategor
     >
     <div
       className={styles.Hotspot_details}
-      onClick={()=> onChoseSubCategory(name)}
+      onClick={()=> onChoseSubCategory(name, horizontalCoordinates)}
       onMouseEnter={()=>onHover(name)}
       onMouseLeave={()=>unHover(name)}
     >
