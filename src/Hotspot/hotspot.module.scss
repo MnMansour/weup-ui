@@ -1,3 +1,4 @@
+@import "../assets/styles/main";
 
 .Hotspot {
   position: absolute;
@@ -5,7 +6,7 @@
 }
 
 .Hotspot_shine {
-  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 0px 0 $white;
   animation: shine ease-in ;
   animation-fill-mode: forwards;
   animation-duration: 0.5s;
@@ -15,13 +16,13 @@
 
 @keyframes shine {
    0% {
-      box-shadow: 0 0px 0px 0 rgba(255, 255, 255, 1);
+      box-shadow: 0 0px 0px 0 $white;
    }
    50% {
-     box-shadow: 0px 1px 24px 9px rgba(255, 255, 255, 1);
+     box-shadow: 0px 1px 24px 9px $white;
    }
    100% {
-      box-shadow: 0 0px 0px 0 rgba(255, 255, 255, 1);
+      box-shadow: 0 0px 0px 0 $white;
    }
 }
 
@@ -34,7 +35,7 @@
 .Hotspot_icon {
   width: 24px;
   height: 24px;
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px 0 $light-black;
   user-drag: none;
   user-select: none;
   -moz-user-select: none;
@@ -45,23 +46,11 @@
 }
 
 .Hotspot_title {
+  @extend .bold;
   position: relative;
   line-height: 24px;
-  background-color: #fff;
+  background-color: $white;
   padding: 0 8px;
-  font-size: 13px;
-  font-weight: 600;
-  color: #202020;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  opacity: 0;
-  animation: fadeIn ease-in ;
-  animation-fill-mode: forwards;
-  animation-duration: 0.3s;
-  z-index: 1;
 }
 @keyframes fadeIn {
    from {
@@ -77,7 +66,7 @@
 .Hotspot_line {
   width: 2px;
   height: 62px;
-  background: #fff;
+  background: $white;
   opacity: 0.7;
   position: absolute;
   left: 11px;

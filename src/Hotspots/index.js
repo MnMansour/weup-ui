@@ -5,7 +5,6 @@ import _ from 'lodash'
 import {choseSubCategory, onHoverSubCategory, unHoverSubCategory} from '../redux/actions/notifications';
 import Hotspot from '../Hotspot';
 
-import styles from "./hotspots.module.scss";
 
 class Hotspots extends Component {
 
@@ -44,7 +43,7 @@ class Hotspots extends Component {
     const getHotspots = this.getHotspots(this.props.chosenCategory)
 
     return (
-      <div className={styles.Hotspots} >
+      <div>
         {getHotspots}
       </div>
     );

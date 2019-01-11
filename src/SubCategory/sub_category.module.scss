@@ -1,12 +1,12 @@
+@import "../assets/styles/main";
 
 .sub_category_name{
+  @extend .small;
+  @extend .bold;
   display: flex;
   align-items: center;
   padding: 4px 0px;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 1.33;
-  color: #353c43;
+  color: $black;
   cursor: pointer;
 }
 

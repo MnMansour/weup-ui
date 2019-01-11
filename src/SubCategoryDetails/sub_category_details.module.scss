@@ -1,3 +1,4 @@
+@import "../assets/styles/main";
 
 .sub_category_details{
   position: absolute;
@@ -7,7 +8,7 @@
   max-height: calc(100vh - 16px);
   margin-right: 8px;
   background-color: #fff;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px 0 $light-black;
   opacity: 0;
   animation: fadeIn ease-in ;
   animation-fill-mode: forwards;
@@ -29,13 +30,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px 0 $light-black;
   cursor: pointer;
-}
-
-.header_title {
-  font-size: 18px;
-  font-weight: 700;
 }
 
 .sub_category_details_header img {
@@ -43,13 +39,13 @@
   height: 24px;
 }
 
-.sub_category_details_header span {
+.sub_category_details_header h3 {
   width: 75%;
 }
 
 .sub_category_details_general {
   padding: 8px;
-  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 3px 0 $light-black;
 }
 
 .sub_category_details_general_field {
@@ -57,12 +53,12 @@
   align-items: center;
   padding: 4px;
   font-size: 14px;
-  color: #353c43;
+  color: $black;
 }
 
 .field_title {
-  font-weight: 700;
-  padding-right: 4px;
+  @extend .bold;
+  padding-right: 8px;
 }
 
 .read_more {
@@ -75,7 +71,7 @@
   align-items: center;
   font-size: 14px;
   font-weight: 700;
-  color: #353c43;
+  color: $black;
   cursor: pointer;
 }
 

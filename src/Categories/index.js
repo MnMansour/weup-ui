@@ -68,7 +68,7 @@ class Categories extends Component {
       <div className={classNames(styles.Categories,{[styles.Categories_open] : !hideFilters})} >
         <div className={styles.categories_header} onClick={this.toggleFilters}>
           <img src={filterList} alt="filter"/>
-          <span className={styles.categories_header_title}>Filtering menu</span>
+          <h5 className={styles.categories_header_title}>Filtering menu</h5>
           <img src={hideFilters ? expandMore : expandLess} alt="expand"/>
         </div>
         {!hideFilters && <div className={styles.categories_menu}>
