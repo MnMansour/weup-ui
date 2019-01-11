@@ -121,7 +121,7 @@
 	
 </ptplugin>
 
-<plugin name="WeupSpotsKrpanoPlugin" url="%FIRSTXML%/graphics/weupspots/weupspots.js" keep="true"/>
+<plugin name="WeupSpotsKrpanoPlugin" url="graphics/weupspots/weupspots.js" keep="true"/>
 
 
 <!-- --><ptplugin name="reactEvent" engine="reactEvent">
