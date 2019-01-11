@@ -810,7 +810,8 @@ function resolve_url_path(url)
     if (url.charAt(0) != "/" && url.indexOf("://") < 0)
     {
         // adjust relative url path
-        url = krpano.parsepath(pluginsUrl + url); //@TODO: Get plugin folder name 
+		url = krpano.parsepath("indexdata/graphics/" + url); //@TODO: Get plugin folder name 
+		console.log("Aattempting to load from: "+url);
     }
 
     return url;
