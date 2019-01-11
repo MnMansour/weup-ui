@@ -1,20 +1,37 @@
-import React, { Component } from 'react';
-import ThreeD from './3DContainer' ;
-import Filtering from './FilteringContainer';
-import MapNavigation from './MapNavigationContainer';
-
-import styles from './App.module.scss';
+import React, { Component } from "react";
+import { connect } from 'react-redux';
+import "./App.css";
+import Categories from './Categories';
+import SubCategoryDetails from './SubCategoryDetails';
+import Hotspots from './Hotspots';
 
 class App extends Component {
+
+
   render() {
+
     return (
-      <div className={styles.App}>
-        <div className={styles.Filtering}><Filtering/></div>
-        <div className={styles.MapNavigation}><MapNavigation/></div>
-        <ThreeD />
+      <div>
+        {this.props.list.categories && <div>
+          <div className="Filters">
+            <SubCategoryDetails/>
+            <Categories/>
+          </div>
+          <Hotspots/>
+        </div>}
+
+        <div></div>
       </div>
-    );
+
+    )
   }
 }
 
-export default App;
+function mapStateToProps (state) {
+  return {
+    list: state.categories_list,
+  }
+};
+
+
+export default connect(mapStateToProps, null) (App);

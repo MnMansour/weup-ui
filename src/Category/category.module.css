@@ -1,0 +1,23 @@
+.category_name {
+  padding: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.43;
+  color: #353c43;
+  cursor: pointer;
+}
+
+.sub_categories {
+  padding: 0 8px;
+}
+
+.open_category {
+  margin-top: 2px;
+  padding-bottom: 16px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  background-color: #f7f8f9;
+}
+
+.hide {
+  display: none;
+}

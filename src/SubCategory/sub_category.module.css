@@ -1,0 +1,19 @@
+
+.sub_category_name{
+  display: flex;
+  align-items: center;
+  padding: 4px 0px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.33;
+  color: #353c43;
+  cursor: pointer;
+}
+
+.sub_category_name_hover {
+  background-color: #ecedee;
+}
+
+.sub_category_name:hover, .category_name:hover {
+    background-color: #ecedee;
+  }
