@@ -7,6 +7,10 @@ import Hotspots from './Hotspots';
 
 class App extends Component {
 
+  componentDidMount() {
+    console.log('hi');
+  }
+
 
   render() {
 
