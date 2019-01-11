@@ -51,6 +51,11 @@
   line-height: 24px;
   background-color: $white;
   padding: 0 8px;
+  opacity: 0;
+  animation: fadeIn ease-in ;
+  animation-fill-mode: forwards;
+  animation-duration: 0.3s;
+  z-index: 1;
 }
 @keyframes fadeIn {
    from {
