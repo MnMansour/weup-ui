@@ -1,14 +1,29 @@
 import React, { Component } from "react";
 import { connect } from 'react-redux';
+import cookie from 'react-cookies'
 import "./App.css";
 import Categories from './Categories';
 import SubCategoryDetails from './SubCategoryDetails';
 import Hotspots from './Hotspots';
+import WelcomeMessage from './WelcomeMessage';
 
 class App extends Component {
 
+  state = {
+    firstTimeRunning: false
+  }
+
   componentDidMount() {
-    console.log('hi');
+    const firstTimeRunning = cookie.load('firstTime');
+
+    if(!firstTimeRunning) {
+      cookie.save('firstTime', 'firstTime')
+      this.setState({firstTimeRunning: true})
+    }
+  }
+
+  closeWelcomeMessage = () => {
+    this.setState({firstTimeRunning:false})
   }
 
 
@@ -16,11 +31,14 @@ class App extends Component {
 
     return (
       <div className="horizontalCoordinates">
-        {this.props.list.categories && <div>
+        {this.props.list.categories &&
+          <div>
             <SubCategoryDetails/>
             <Categories/>
-          <Hotspots/>
-        </div>}
+            <Hotspots/>
+            <WelcomeMessage closeWelcomeMessage={this.closeWelcomeMessage}  show={this.state.firstTimeRunning}/>
+          </div>
+        }
 
         <div></div>
       </div>

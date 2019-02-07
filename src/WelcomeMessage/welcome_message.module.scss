@@ -1,0 +1,70 @@
+@import "../assets/styles/main";
+
+.WelcomeMessage {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.WelcomeMessage_box {
+  background-color: white;
+  width: 465px;
+}
+
+.WelcomeMessage_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3px;
+  padding: 10px;
+  box-shadow: 0 1px 3px 0 $light-black;
+
+  img {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+}
+
+.WelcomeMessage_body {
+  padding: 16px;
+  padding-bottom: 0;
+
+  .message_text {
+    @extend .small;
+  }
+
+  img {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 10px auto;
+  }
+
+  h4 {
+    text-align: center;
+  }
+}
+
+.WelcomeMessage_footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 16px;
+
+  button {
+    @extend .bold;
+    padding: 8px 24px;
+    background-color: $primary;
+    color: $white;
+    outline: none;
+  }
+}
+
+.hide {
+  display: none;
+}
