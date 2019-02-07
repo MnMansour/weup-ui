@@ -5,6 +5,7 @@ var categoriesJson = {
       subcategories: [
         {
           type: "busStop",
+          icon : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRSuPqORtGFLUqqn7GVSMsGOLstF1pAc-pbsw0EzcotVZYh9lc",
           name: "Example street",
           screenCoordinates: {
             top: "0",
@@ -28,10 +29,11 @@ var categoriesJson = {
               value: "2017"
             }
           ],
-          html: '<div><img src="www.image.jpeg />"</div>'
+          html: '<div><h2>Template of a blog</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><h3>This is the first news !</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><img src="https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><h3>This is the second news !</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p></div>'
         },
         {
           type: "busStop",
+          icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRSuPqORtGFLUqqn7GVSMsGOLstF1pAc-pbsw0EzcotVZYh9lc",
           name: "Another street",
           screenCoordinates: {
             top: "0",
@@ -55,10 +57,11 @@ var categoriesJson = {
               value: "2017"
             }
           ],
-          html: "<div><p1>hello world</p1></div>"
+          html: '<div><h2>Template of a blog</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><h3>This is the first news !</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><img src="https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><h3>This is the second news !</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p></div>'
         },
         {
           type: "busStop",
+          icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRSuPqORtGFLUqqn7GVSMsGOLstF1pAc-pbsw0EzcotVZYh9lc",
           name: "Another street 2",
           screenCoordinates: {
             top: "0",
@@ -82,10 +85,11 @@ var categoriesJson = {
               value: "2017"
             }
           ],
-          html: "<div><p1>hello world</p1></div>"
+          html: '<div><h2>Template of a blog</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><h3>This is the first news !</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><img src="https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><h3>This is the second news !</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p></div>'
         },
         {
           type: "street",
+          icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6XrlMUYN930NxgLzP0PhD8pg0Z1D85Nwa30j8r4PDqHZtj6JH",
           name: "sample street 1",
           screenCoordinates: {
             top: "0",
@@ -109,10 +113,11 @@ var categoriesJson = {
               value: "2017"
             }
           ],
-          html: "<div><p1>hello world</p1></div>"
+          html: '<div><h2>Template of a blog</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><h3>This is the first news !</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><img src="https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><h3>This is the second news !</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p></div>'
         },
         {
           type: "street",
+          icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6XrlMUYN930NxgLzP0PhD8pg0Z1D85Nwa30j8r4PDqHZtj6JH",
           name: "sample street 2",
           screenCoordinates: {
             top: "0",
@@ -136,7 +141,7 @@ var categoriesJson = {
               value: "2017"
             }
           ],
-          html: "<div><p1>hello world</p1></div>"
+          html: '<div><h2>Template of a blog</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><h3>This is the first news !</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><img src="https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><h3>This is the second news !</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p></div>'
         }
       ]
     },
@@ -145,6 +150,7 @@ var categoriesJson = {
       subcategories: [
         {
           type: "building",
+          icon: "https://cdn5.vectorstock.com/i/1000x1000/55/54/office-building-icon-vector-21095554.jpg",
           name: "VIIRA Skanska ",
           screenCoordinates: {
             top: "0",
@@ -168,10 +174,11 @@ var categoriesJson = {
               value: "2017"
             }
           ],
-          html: '<div><img src="www.image.jpeg />"</div>'
+          html: '<div><h2>Template of a blog</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><h3>This is the first news !</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><img src="https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><h3>This is the second news !</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p></div>'
         },
         {
           type: "building",
+          icon: "https://cdn5.vectorstock.com/i/1000x1000/55/54/office-building-icon-vector-21095554.jpg",
           name: "TAMPUURI Skanska",
           screenCoordinates: {
             top: "0",
@@ -195,7 +202,7 @@ var categoriesJson = {
               value: "2017"
             }
           ],
-          html: "<div><p1>This is the TAMPUURI by Skanska</p1></div>"
+          html: '<div><h2>Template of a blog</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><h3>This is the first news !</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><img src="https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><h3>This is the second news !</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis repellendus itaque voluptates, omnis nobis suscipit, eaque voluptatum quisquam optio natus facilis nesciunt repudiandae laudantium nostrum nam dolores quae voluptatem.</p></div>'
         }
       ]
     }

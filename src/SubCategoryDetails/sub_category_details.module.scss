@@ -14,6 +14,7 @@
   animation-fill-mode: forwards;
   animation-duration: 0.3s;
   z-index: 100;
+  overflow: auto;
 }
 @keyframes fadeIn {
    from {
@@ -80,4 +81,24 @@
   height: 20px;
   margin-left: 4px;
   margin-bottom: 2px;
+}
+
+.html_content {
+  padding: 16px 8px;
+
+  p {
+    margin-bottom: 12px;
+  }
+
+  img {
+    display: block;
+    max-width: 90%;
+    margin: 12px auto;
+  }
+}
+
+.header_box {
+  position: fixed;
+  width: 336px;
+  background: $white;
 }
