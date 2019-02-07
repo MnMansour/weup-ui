@@ -56,6 +56,87 @@ var categoriesJson = {
             }
           ],
           html: "<div><p1>hello world</p1></div>"
+        },
+        {
+          type: "busStop",
+          name: "Another street 2",
+          screenCoordinates: {
+            top: "0",
+            left: "0"
+          },
+          horizontalCoordinates: {},
+          wgsCoordinates: {
+            lat: 62.253433,
+            lon: 25.754459,
+            alt: 20
+          },
+          data: [
+            {
+              title: "'Building'",
+              link: false,
+              value: "2017"
+            },
+            {
+              title: "'Apartment'",
+              link: false,
+              value: "2017"
+            }
+          ],
+          html: "<div><p1>hello world</p1></div>"
+        },
+        {
+          type: "street",
+          name: "sample street 1",
+          screenCoordinates: {
+            top: "0",
+            left: "0"
+          },
+          horizontalCoordinates: {},
+          wgsCoordinates: {
+            lat: 62.258433,
+            lon: 25.752459,
+            alt: 20
+          },
+          data: [
+            {
+              title: "'Building'",
+              link: false,
+              value: "2017"
+            },
+            {
+              title: "'Apartment'",
+              link: false,
+              value: "2017"
+            }
+          ],
+          html: "<div><p1>hello world</p1></div>"
+        },
+        {
+          type: "street",
+          name: "sample street 2",
+          screenCoordinates: {
+            top: "0",
+            left: "0"
+          },
+          horizontalCoordinates: {},
+          wgsCoordinates: {
+            lat: 62.254433,
+            lon: 25.752459,
+            alt: 20
+          },
+          data: [
+            {
+              title: "'Building'",
+              link: false,
+              value: "2017"
+            },
+            {
+              title: "'Apartment'",
+              link: false,
+              value: "2017"
+            }
+          ],
+          html: "<div><p1>hello world</p1></div>"
         }
       ]
     },

@@ -12,7 +12,7 @@ const Hotspot = ({ data:{name, screenCoordinates, horizontalCoordinates}, chosen
     )}
     style={{
       top: screenCoordinates.top-60+'px',
-      left: screenCoordinates.left-60+'px',
+      left: screenCoordinates.left-9+'px',
       visibility: screenCoordinates.top && screenCoordinates.left ? 'visible' : 'hidden',
       }}
     >
