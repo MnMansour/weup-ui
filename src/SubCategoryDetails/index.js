@@ -39,7 +39,7 @@ class SubCategoryDetails extends Component {
            <div className={styles.sub_category_details}>
              <div ref={ (divElement) => this.divElement = divElement} className={styles.header_box}>
               <div className={styles.sub_category_details_header}>
-                <img src={placeholder} alt="place name"/>
+                <img src={currentSubCategory.icon? currentSubCategory.icon : placeholder} alt="place name"/>
                 <h3>{currentSubCategory.name}</h3>
                 <img onClick={()=>choseSubCategory(null)} src={close} alt="close"/>
               </div>
