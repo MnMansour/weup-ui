@@ -6,9 +6,10 @@ import {choseSubCategory} from '../redux/actions/notifications';
 import styles from "./sub_category_details.module.scss";
 
 import close from '../assets/icons/close.svg';
-import placeholder from '../assets/icons/placeholder.jpg';
 import expandLess from '../assets/icons/expand_less.svg';
 import expandMore from '../assets/icons/expand_more.svg';
+import {typesIcon} from '../types_icon';
+
 
 
 class SubCategoryDetails extends Component {
@@ -39,7 +40,7 @@ class SubCategoryDetails extends Component {
            <div className={styles.sub_category_details}>
              <div ref={ (divElement) => this.divElement = divElement} className={styles.header_box}>
               <div className={styles.sub_category_details_header}>
-                <img src={currentSubCategory.icon? currentSubCategory.icon : placeholder} alt="place name"/>
+                <img src={typesIcon(currentSubCategory.type ,currentSubCategory.icon)} alt="place name"/>
                 <h3>{currentSubCategory.name}</h3>
                 <img onClick={()=>choseSubCategory(null)} src={close} alt="close"/>
               </div>

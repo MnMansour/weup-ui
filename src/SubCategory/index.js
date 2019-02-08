@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import styles from "./sub_category.module.scss";
 
-import placeholder from '../assets/icons/placeholder.jpg';
+import {typesIcon} from '../types_icon';
 
 const SubCategory = ({Data ,chosenSubCategory , subCategoryHover, onChoseSubCategory, onHover, unHover}) => (
   <div
@@ -14,7 +14,7 @@ const SubCategory = ({Data ,chosenSubCategory , subCategoryHover, onChoseSubCate
     onMouseEnter={()=>onHover(Data.name)}
     onMouseLeave={()=>unHover(Data.name)}
   >
-    <img style={{paddingRight: '4px'}} width="20" height="20" src={Data.icon ? Data.icon : placeholder} alt="placeholder" />
+    <img style={{paddingRight: '4px'}} width="20" height="20" src={typesIcon(Data.type ,Data.icon)} alt="placeholder" />
     {Data.name}
   </div>
 )
