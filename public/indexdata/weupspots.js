@@ -39,7 +39,7 @@ function krpanoplugin(){
         }
 
 		// load the requiered three.js scripts then run all ThreeJS code
-		load_scripts(["WeupSpots/categories.js","ThreeJS/three.min.js","ThreeJS/OBJLoader.js"], setInitialValues); //Note that the setUpThreJS function is run here
+		load_scripts(["weupspots/categories.js","ThreeJS/three.min.js","ThreeJS/OBJLoader.js"], setInitialValues); //Note that the setUpThreJS function is run here
     };
 
 
