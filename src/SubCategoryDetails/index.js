@@ -49,7 +49,7 @@ class SubCategoryDetails extends Component {
                 <div className={styles.read_more}><span onClick={this.toggleReadmore}>{this.state.readMore ? 'Read less' : 'Read more'} <img src={this.state.readMore ? expandLess : expandMore} alt="expand"/></span></div>
               </div>
             </div>
-            {this.state.readMore && <div style={{marginTop: this.state.height}} className={styles.html_content} dangerouslySetInnerHTML={{__html: currentSubCategory.html}} />}
+            {this.state.readMore && <div className={styles.html_container} style={{paddingTop: this.state.height}}><div className={styles.html_content} dangerouslySetInnerHTML={{__html: currentSubCategory.html}} /></div>}
           </div>
         )
       } else {return null}

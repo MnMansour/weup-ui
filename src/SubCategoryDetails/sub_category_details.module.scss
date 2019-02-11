@@ -14,7 +14,6 @@
   animation-fill-mode: forwards;
   animation-duration: 0.3s;
   z-index: 100;
-  overflow: auto;
 }
 @keyframes fadeIn {
    from {
@@ -83,8 +82,16 @@
   margin-bottom: 2px;
 }
 
+.html_container {
+  box-sizing: border-box;
+  height: calc(100vh - 16px);
+}
+
 .html_content {
   padding: 16px 8px;
+  overflow: auto;
+  max-height: 100%;
+
 
   p {
     margin-bottom: 12px;
