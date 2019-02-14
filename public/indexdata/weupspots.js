@@ -56,7 +56,11 @@ function krpanoplugin(){
 			keyboardPromtController = new KeyboardPrompt(devModeString, devModeTimeout);
 		}
 
-		setDefaultAltitude(); // Add the default altitude to Krpano
+		//Setup all functions that are inside the categories Json object
+		setCategoriesFunctions();
+
+		// Add the default altitude to Krpano
+		setDefaultAltitude(); 
 
 		renderer = new THREE.WebGLRenderer({canvas:krpano.webGL.canvas, context:krpano.webGL.context});
 		renderer.autoClear = false;
@@ -96,6 +100,49 @@ function krpanoplugin(){
 
 		// build the ThreeJS scene (start adding custom code there)
 		build_scene();
+	};
+
+	//Setup all functions that are inside the categories Json object
+	function setCategoriesFunctions(){
+
+		for (i = 0; i < categoriesJson.categories.length; i++)
+		{
+			for (j = 0; j < categoriesJson.categories[i].subcategories.length; j++)
+			{
+				var subCat = categoriesJson.categories[i].subcategories[j];
+				subCat.id = i+j;
+				subCat.hasRotated = hasRotatedFactory(subCat);
+				subCat.rotateToMe = rotateToFactory(subCat);
+			}
+		}
+	};
+
+	//Factory function to create rotateTo functions for subcategories
+	function rotateToFactory(object){
+		return function(){
+			rotateToSpot(object);
+		}
+	};
+
+	//Factory function to create rotateTo functions for subcategories
+	function hasRotatedFactory(object){
+		return function(){
+			hasRotated(object);
+		}
+	};
+
+	//TODO: Remove this function. Create it in react world instead
+	function hasRotated(subcategory) {
+		console.log("We have rotated to "+subcategory.name);
+	};
+	
+	function rotateToSpot(subcategory) {
+	krpano.set("endautorotation_"+subcategory.id, subcategory.hasRotated);
+
+	var fov = Number(krpano.get("view.fov"));
+	var horX = subcategory.horizontalCoordinates[0];
+	var horY = subcategory.horizontalCoordinates[1];
+	krpano.call("lookto("+horY+", "+horX+","+fov+",,,,endautorotation_"+subcategory.id+")");
 	};
 
 
@@ -274,7 +321,7 @@ function krpanoplugin(){
 		if (!firstRun) //If values have been set atleast once
 		{
 			updateScreenCoordinates();
-      updateReactState(categoriesJson.categories)
+      		updateReactState(categoriesJson.categories);
 		}
 	}
 

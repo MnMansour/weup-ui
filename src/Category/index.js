@@ -41,7 +41,7 @@ class Category extends Component {
 
   onChoseSubCategory = async (subcategory) => {
     this.props.choseSubCategory(subcategory.name);
-    window.rotateToSpot(subcategory.horizontalCoordinates)
+    subcategory.rotateToMe();
   }
 
   render() {

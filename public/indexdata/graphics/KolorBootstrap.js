@@ -355,15 +355,3 @@ function addWeupSpots(pPlugID)
 /********************************
 React Event plugin starts here
 ********************************/
-
-function hasLookedToSubcategorySpot(){
-	console.log("We have just looked at a subcategory spot");
-	rotateToSpotDone(true)
-}
-
-function rotateToSpot(horizontalCoordinates) {
-  krpano.set("endautorotation", hasLookedToSubcategorySpot);
-	rotateToSpotDone(false)
-  var fov = Number(krpano.get("view.fov"));
-  krpano.call("lookto("+horizontalCoordinates[1]+", "+horizontalCoordinates[0]+","+fov+",,,,endautorotation)");
-}

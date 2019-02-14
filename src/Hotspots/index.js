@@ -31,11 +31,6 @@ class Hotspots extends Component {
     }
   }
 
-  onChoseSubCategory = (name, horizontalCoordinates) => {
-    this.props.choseSubCategory(name);
-    window.rotateToSpot(horizontalCoordinates)
-  }
-
 
 
   render() {
