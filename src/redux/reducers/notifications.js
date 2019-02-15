@@ -7,7 +7,7 @@ export default function notifications(state = {}, action = {}) {
       return {...state, chosenCategory: action.payload};
 
     case constants.SUB_CATEGORY_CHOSEN:
-      return {...state, chosenSubCategory: action.payload};
+      return {...state, chosenSubCategory: action.payload, rotateDone:false};
 
     case constants.SUB_CATEGORY_HOVER:
       return {...state, subCategoryHover: action.payload};

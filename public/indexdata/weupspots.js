@@ -120,24 +120,15 @@ function krpanoplugin(){
 	//Factory function to create rotateTo functions for subcategories
 	function rotateToFactory(object){
 		return function(){
-			rotateToSpot(object);
+      rotateToSpot(object);
 		}
 	};
 
 	//Factory function to create rotateTo functions for subcategories
 	function hasRotatedFactory(object){
 		return function(){
-			hasRotated(object);
+			rotateToSpotDone(true)
 		}
-	};
-
-	//TODO: Remove this function. Create it in react world instead
-	function hasRotated(subcategory) {
-		console.log("We have rotated to "+subcategory.name);
-    rotateToSpotDone(true)
-    setTimeout(function () {
-      rotateToSpotDone(false)
-    }, 1000);
 	};
 
 	function rotateToSpot(subcategory) {
