@@ -31,6 +31,11 @@ class Hotspots extends Component {
     }
   }
 
+  onChoseSubCategory = async (subcategory) => {
+    this.props.choseSubCategory(subcategory.name);
+    subcategory.rotateToMe();
+  }
+
 
 
   render() {

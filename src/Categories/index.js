@@ -19,7 +19,7 @@ class Categories extends Component {
 
   getCategoriesList = (data) => {
     if (data.categories){
-      return data.categories.map((item, i) => (
+      return data.categories.map((item, i) =>(
         <Category
           key={i}
           Data={item}

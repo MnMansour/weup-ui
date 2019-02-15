@@ -4,27 +4,27 @@ import styles from './hotspot.module.scss';
 import {typesIcon} from '../types_icon';
 
 
-const Hotspot = ({ data:{name, icon, type, screenCoordinates, horizontalCoordinates}, chosenSubCategory, subCategoryHover, onChoseSubCategory, onHover, unHover, rotateDone}) => (
+const Hotspot = ({ data, chosenSubCategory, subCategoryHover, onChoseSubCategory, onHover, unHover, rotateDone}) => (
 
   <div  className={classNames(
       styles.Hotspot,
-      {[styles.Hotspot_shine]: (name === chosenSubCategory) && rotateDone}
+      {[styles.Hotspot_shine]: (data.name === chosenSubCategory) && rotateDone}
     )}
     style={{
-      top: screenCoordinates.top-85+'px',
-      left: screenCoordinates.left-11+'px',
-      visibility: screenCoordinates.top && screenCoordinates.left ? 'visible' : 'hidden',
+      top: data.screenCoordinates.top-85+'px',
+      left: data.screenCoordinates.left-11+'px',
+      visibility: data.screenCoordinates.top && data.screenCoordinates.left ? 'visible' : 'hidden',
       }}
     >
     <div
       className={styles.Hotspot_details}
-      onClick={()=> onChoseSubCategory(name, horizontalCoordinates)}
-      onMouseEnter={()=>onHover(name)}
-      onMouseLeave={()=>unHover(name)}
+      onClick={()=> onChoseSubCategory(data)}
+      onMouseEnter={()=>onHover(data.name)}
+      onMouseLeave={()=>unHover(data.name)}
     >
-      <img src={typesIcon(type, icon)} alt="placeholder" className={styles.Hotspot_icon} />
-      {((name === subCategoryHover) || (name === chosenSubCategory)) &&
-        <div className={styles.Hotspot_title}>{name}</div>}
+      <img src={typesIcon(data.type, data.icon)} alt="placeholder" className={styles.Hotspot_icon} />
+      {((data.name === subCategoryHover) || (data.name === chosenSubCategory)) &&
+        <div className={styles.Hotspot_title}>{data.name}</div>}
     </div>
     <div className={styles.Hotspot_line}></div>
   </div>

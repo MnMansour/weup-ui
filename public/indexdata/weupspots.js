@@ -60,7 +60,7 @@ function krpanoplugin(){
 		setCategoriesFunctions();
 
 		// Add the default altitude to Krpano
-		setDefaultAltitude(); 
+		setDefaultAltitude();
 
 		renderer = new THREE.WebGLRenderer({canvas:krpano.webGL.canvas, context:krpano.webGL.context});
 		renderer.autoClear = false;
@@ -111,7 +111,7 @@ function krpanoplugin(){
 			{
 				var subCat = categoriesJson.categories[i].subcategories[j];
 				subCat.id = i+j;
-				subCat.hasRotated = hasRotatedFactory(subCat);
+        subCat.hasRotated = hasRotatedFactory(subCat);
 				subCat.rotateToMe = rotateToFactory(subCat);
 			}
 		}
@@ -134,8 +134,12 @@ function krpanoplugin(){
 	//TODO: Remove this function. Create it in react world instead
 	function hasRotated(subcategory) {
 		console.log("We have rotated to "+subcategory.name);
+    rotateToSpotDone(true)
+    setTimeout(function () {
+      rotateToSpotDone(false)
+    }, 1000);
 	};
-	
+
 	function rotateToSpot(subcategory) {
 	krpano.set("endautorotation_"+subcategory.id, subcategory.hasRotated);
 
