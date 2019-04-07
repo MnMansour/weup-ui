@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import _ from 'lodash';
-//import classNames from 'classnames';
+import EditSubcategoryModal from '../Modals/subCategoryDetailsModal';
 import {choseSubCategory} from '../redux/actions/notifications';
 import styles from "./sub_category_details.module.scss";
 
 import close from '../assets/icons/close.svg';
 import expandLess from '../assets/icons/expand_less.svg';
 import expandMore from '../assets/icons/expand_more.svg';
+import editIcon from '../assets/icons/edit.svg';
 import {typesIcon} from '../types_icon';
 
 
@@ -18,6 +19,8 @@ class SubCategoryDetails extends Component {
     readMore: false,
     showComponent: false,
     height: 0,
+    isModalOpen: false,
+    currentSubCategory: {},
   }
 
 
@@ -29,10 +32,8 @@ class SubCategoryDetails extends Component {
 
 
   getSubCategoryDetails = (category, subCategory) => {
-    const {list,choseSubCategory} = this.props;
-    if (category && subCategory) {
-      const currentCategory = _.find( list.categories,  ['name', category])
-      const currentSubCategory = _.find( currentCategory.subcategories,  ['name', subCategory])
+    const {choseSubCategory} = this.props;
+    const currentSubCategory = this.getCurrentSubCategory();
 
       if (currentSubCategory) {
         const generalData = this.generalData(currentSubCategory.data)
@@ -42,6 +43,7 @@ class SubCategoryDetails extends Component {
               <div className={styles.sub_category_details_header}>
                 <img src={typesIcon(currentSubCategory.type ,currentSubCategory.icon)} alt="place name"/>
                 <h3>{currentSubCategory.name}</h3>
+                {this.props.dev_mode && <img onClick={()=>this.openModal()} src={editIcon} alt="Edit"/>}
                 <img onClick={()=>choseSubCategory(null)} src={close} alt="close"/>
               </div>
               <div className={styles.sub_category_details_general}>
@@ -53,7 +55,14 @@ class SubCategoryDetails extends Component {
           </div>
         )
       } else {return null}
-    } else {return null}
+  }
+
+  openModal = () => {
+    this.setState({isModalOpen: true})
+  }
+
+  closeModal = () => {
+    this.setState({isModalOpen: false})
   }
 
   generalData = (data) => {
@@ -66,12 +75,22 @@ class SubCategoryDetails extends Component {
     ))
   }
 
+  getCurrentSubCategory = () => {
+    const {list, chosenCategory, chosenSubCategory} = this.props;
+    if (chosenCategory && chosenSubCategory) {
+      const currentCategory = _.find( list.categories,  ['name', chosenCategory])
+      const currentSubCategory = _.find( currentCategory.subcategories,  ['name', chosenSubCategory])
+      return currentSubCategory
+    } else return null
+  }
+
   render() {
-    const {chosenCategory, chosenSubCategory} = this.props;
-    const subCategoryDetails = this.getSubCategoryDetails(chosenCategory ,chosenSubCategory)
+    const subCategoryDetails = this.getSubCategoryDetails();
+    const currentSubCategory = this.getCurrentSubCategory()
     return(
       <div>
         {subCategoryDetails}
+        {this.props.dev_mode && <EditSubcategoryModal Data={currentSubCategory ? currentSubCategory : {}} modalIsOpen={this.state.isModalOpen} closeModal={this.closeModal}/>}
       </div>
     )
   }
@@ -79,6 +98,7 @@ class SubCategoryDetails extends Component {
 
 function mapStateToProps (state) {
   return {
+    dev_mode: state.notifications.dev_mode,
     list: state.categories_list,
     chosenCategory: state.notifications.chosenCategory,
     chosenSubCategory: state.notifications.chosenSubCategory,

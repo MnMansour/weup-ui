@@ -13,7 +13,7 @@ class Hotspots extends Component {
       const {list, subCategoryHover, chosenSubCategory, onHoverSubCategory, unHoverSubCategory, rotateDone} = this.props;
 
       const category = _.find(list.categories, ['name', categoryName])
-      return category.subcategories.map((item, i)=> (
+      return category ? category.subcategories.map((item, i)=> (
         <Hotspot
           key={i}
           data={item}
@@ -24,7 +24,7 @@ class Hotspots extends Component {
           unHover={unHoverSubCategory}
           rotateDone={rotateDone}
         />
-      ))
+    )) : null;
 
     } else {
       return null

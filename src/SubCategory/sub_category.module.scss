@@ -1,19 +1,69 @@
 @import "../assets/styles/main";
 
+.sub_category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .sub_category_name{
   @extend .small;
   @extend .bold;
   display: flex;
+  flex-grow: 2;
   align-items: center;
   padding: 4px 0px;
   color: $black;
   cursor: pointer;
 }
 
+.sub_category_form {
+  padding: 12px 0;
+}
+
+.sub_category_input {
+  width: 212px;
+  padding: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.sub_category_cancel {
+  padding: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-right: 4px;
+  color: $black;
+  background-color: $white;
+}
+
+.sub_category_submit {
+  @extend .sub_category_cancel;
+  color: $white;
+  background-color: $primary;
+}
+
 .sub_category_name_hover {
-  background-color: #ecedee;
+  background-color: $gray-2;
 }
 
 .sub_category_name:hover, .category_name:hover {
-    background-color: #ecedee;
+    background-color: $gray-2;
   }
+
+.sub_category_icon {
+  display: flex;
+  align-items: center;
+  img {
+    width: 16px;
+    height: 16px;
+    padding: 2px;
+    margin-left: 8px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $gray-2;
+    }
+  }
+}

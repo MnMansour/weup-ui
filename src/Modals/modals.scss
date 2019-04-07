@@ -1,0 +1,105 @@
+@import "../assets/styles/main";
+
+.Modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.Overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(255, 255, 255, 0.75);
+  z-index: 10000;
+}
+
+.edit_subcategory_modal{
+  width: 800px;
+
+  img {
+    cursor: pointer;
+  }
+}
+
+.Modal_header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid $gray-3;
+}
+
+.Modal_body{
+  position: relative;
+  max-height: 70vh;
+  overflow: auto;
+  padding: 8px;
+  border-bottom: 1px solid $gray-3;
+
+  h3 {
+    margin-bottom: 12px;
+  }
+}
+
+.general_data {
+  margin: 12px 0 24px 0;
+  border-bottom: 1px solid $gray-3;
+  padding-bottom: 12px;
+}
+
+.general_data_row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+
+  input {
+    height: 24px;
+    margin-right: 8px;
+    font-weight: 700;
+    color: $black;
+    font-size: 14px;
+    width: 212px;
+    padding: 0 4px;
+  }
+}
+
+.editor_container {
+  border: 1px solid $gray-2;
+  padding: 8px;
+  max-height: 50vh;
+  overflow: auto;
+}
+
+.Modal_footer {
+  padding: 12px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.Modal_cancel {
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-right: 8px;
+  color: $black;
+  background-color: $white;
+}
+
+.Modal_save {
+  @extend .Modal_cancel;
+  color: $white;
+  background-color: $primary;
+}

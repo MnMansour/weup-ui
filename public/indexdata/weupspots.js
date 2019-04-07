@@ -102,15 +102,49 @@ function krpanoplugin(){
 		build_scene();
 	};
 
+
+  function _updateCategories(newJson) {
+    categoriesJson.categories = newJson;
+    iterateAllPositions();
+    update_scene();
+    setCategoriesFunctions();
+    update_scene();
+  }
+
+  function getScreenCenter () {
+    // return here the wgsCoordinates for new subCategory
+    return null;
+  }
+
+  function getClickedMousePosition (event) {
+    // return here the wgsCoordinates for new subCategory depend on where mouse clicked
+    return null;
+  }
+
 	//Setup all functions that are inside the categories Json object
 	function setCategoriesFunctions(){
 
+    categoriesJson.updateCategories = function(newJson) {
+      _updateCategories(newJson);
+    }
+
+    categoriesJson.screenCenter = function() {
+      return getScreenCenter();
+    }
+
+    categoriesJson.mousePosition = function(e) {
+      return getClickedMousePosition(e);
+    }
+
+
 		for (i = 0; i < categoriesJson.categories.length; i++)
+
 		{
+
 			for (j = 0; j < categoriesJson.categories[i].subcategories.length; j++)
 			{
 				var subCat = categoriesJson.categories[i].subcategories[j];
-				subCat.id = i+j;
+				subCat.id = Math.random().toString(36).substr(2, 9);
         subCat.hasRotated = hasRotatedFactory(subCat);
 				subCat.rotateToMe = rotateToFactory(subCat);
 			}
@@ -316,7 +350,7 @@ function krpanoplugin(){
 		if (!firstRun) //If values have been set atleast once
 		{
 			updateScreenCoordinates();
-      		updateReactState(categoriesJson.categories);
+      updateReactState(categoriesJson);
 		}
 	}
 
@@ -379,7 +413,6 @@ function krpanoplugin(){
                 var spot = categoriesJson.categories[i].subcategories[j];
 
                 var krpanoScreen = krpano.spheretoscreen(spot.horizontalCoordinates[1],spot.horizontalCoordinates[0]);
-
                 spot.screenCoordinates.left =  krpanoScreen.x;
                 spot.screenCoordinates.top =  krpanoScreen.y;
             }
@@ -432,13 +465,13 @@ function krpanoplugin(){
 	{
 		if(!positionController)
 		{
-			if(event.data.thisClass.currentLetterIndex >= event.data.thisClass.promtWord.length)
+			if(event.data.thisClass.promtWord && event.data.thisClass.currentLetterIndex >= event.data.thisClass.promtWord.length)
 			{
 				event.data.thisClass.currentLetterIndex = 0;
 			}
 
 			var x = String.fromCharCode(event.which || event.keyCode);
-			var y = event.data.thisClass.promtWord.charAt(event.data.thisClass.currentLetterIndex).toUpperCase();;
+			var y = event.data.thisClass.promtWord? event.data.thisClass.promtWord.charAt(event.data.thisClass.currentLetterIndex).toUpperCase() : null;
 
 			if(x == y)
 			{
@@ -1026,4 +1059,5 @@ local.onresize = function(width,height)
     // of the width=100%, height=100% CSS style
     return false;
 };
+
 };

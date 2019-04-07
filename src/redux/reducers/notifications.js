@@ -3,6 +3,10 @@ import * as constants from '../constants/notifications';
 export default function notifications(state = {}, action = {}) {
   switch (action.type) {
 
+    case constants.DEV_MODE:
+
+    return {...state, dev_mode: action.payload};
+
     case constants.CATEGORY_CHOSEN:
       return {...state, chosenCategory: action.payload};
 
