@@ -45,7 +45,7 @@ class Categories extends Component {
   // Run Dev mode on ctrl + shift + d
 
   keydownHandler = (e) => {
-    if(e.shiftKey && e.ctrlKey && e.keyCode === 68) this.toggleDevMode();
+    if(e.shiftKey && e.ctrlKey && e.keyCode === 49) this.toggleDevMode();
   }
 
   componentDidMount() {
