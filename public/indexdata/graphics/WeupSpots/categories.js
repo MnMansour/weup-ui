@@ -1,6 +1,7 @@
 var categoriesJson = {
   categories: [
     {
+      id: "984u2ytrj98thrigj9540+3k",
       name: "Connections",
       subcategories: [
         {
@@ -19,12 +20,12 @@ var categoriesJson = {
           },
           data: [
             {
-              title: "'Building'",
+              title: "Building",
               link: false,
               value: "2017"
             },
             {
-              title: "'Apartment'",
+              title: "Apartment",
               link: false,
               value: "2017"
             }
@@ -47,12 +48,12 @@ var categoriesJson = {
           },
           data: [
             {
-              title: "'Building'",
+              title: "Building",
               link: false,
               value: "2017"
             },
             {
-              title: "'Apartment'",
+              title: "Apartment",
               link: false,
               value: "2017"
             }
@@ -75,12 +76,12 @@ var categoriesJson = {
           },
           data: [
             {
-              title: "'Building'",
+              title: "Building",
               link: false,
               value: "2017"
             },
             {
-              title: "'Apartment'",
+              title: "Apartment",
               link: false,
               value: "2017"
             }
@@ -103,12 +104,12 @@ var categoriesJson = {
           },
           data: [
             {
-              title: "'Building'",
+              title: "Building",
               link: false,
               value: "2017"
             },
             {
-              title: "'Apartment'",
+              title: "Apartment",
               link: false,
               value: "2017"
             }
@@ -131,12 +132,12 @@ var categoriesJson = {
           },
           data: [
             {
-              title: "'Building'",
+              title: "Building",
               link: false,
               value: "2017"
             },
             {
-              title: "'Apartment'",
+              title: "Apartment",
               link: false,
               value: "2017"
             }
@@ -146,6 +147,7 @@ var categoriesJson = {
       ]
     },
     {
+      id: "hgriu499gdfjo45t43345",
       name: "Real estate",
       subcategories: [
         {
@@ -164,12 +166,12 @@ var categoriesJson = {
           },
           data: [
             {
-              title: "'Building'",
+              title: "Building",
               link: false,
               value: "2017"
             },
             {
-              title: "'Apartment'",
+              title: "Apartment",
               link: false,
               value: "2017"
             }
@@ -192,12 +194,12 @@ var categoriesJson = {
           },
           data: [
             {
-              title: "'Building'",
+              title: "Building",
               link: false,
               value: "2017"
             },
             {
-              title: "'Apartment'",
+              title: "Apartment",
               link: false,
               value: "2017"
             }

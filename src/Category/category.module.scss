@@ -5,7 +5,53 @@
   font-weight: bold;
   line-height: 1.43;
   color: $black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.category_title{
   cursor: pointer;
+}
+
+.category_icons {
+  width: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+}
+
+.category_input {
+  height: 24px;
+  margin-right: 4px;
+  font-weight: 700;
+  color: $black;
+  font-size: 14px;
+  width: 212px;
+  padding: 0 4px;
+}
+
+.category_cancel {
+  margin: 8px 0;
+  padding: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-right: 4px;
+  color: $black;
+  background-color: $white;
+}
+
+.category_submit {
+  @extend .category_cancel;
+  color: $white;
+  background-color: $primary;
 }
 
 .sub_categories {
@@ -29,4 +75,35 @@
   font-weight: 600;
   margin-top: 6px;
   text-transform: uppercase;
+}
+
+.sub_category_form {
+  padding: 12px 0;
+
+  label {
+    display: block;
+  }
+}
+
+.sub_category_input {
+  width: 212px;
+  padding: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.sub_category_cancel {
+  padding: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-right: 4px;
+  color: $black;
+  background-color: $white;
+}
+
+.sub_category_submit {
+  @extend .sub_category_cancel;
+  color: $white;
+  background-color: $primary;
 }

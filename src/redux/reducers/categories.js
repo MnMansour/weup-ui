@@ -5,7 +5,7 @@ export default function categories(state = {}, action = {}) {
 
 
     case constants.CATEGORIES_UPDATED:
-      return {...state, categories: action.payload}
+      return {...state, categories: action.payload.categories, updateCategories: action.payload.updateCategories, screenCenter: action.payload.screenCenter}
 
     default:
       return state;

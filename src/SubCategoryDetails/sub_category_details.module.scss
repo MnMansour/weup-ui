@@ -31,7 +31,10 @@
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 2px 6px 0 $light-black;
-  cursor: pointer;
+
+  img {
+    cursor: pointer;
+  }
 }
 
 .sub_category_details_header img {

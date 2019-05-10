@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from 'react-redux';
 import cookie from 'react-cookies'
+import 'react-confirm-alert/src/react-confirm-alert.css';
 import "./App.css";
 import Categories from './Categories';
 import SubCategoryDetails from './SubCategoryDetails';

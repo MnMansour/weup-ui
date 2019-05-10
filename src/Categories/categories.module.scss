@@ -33,9 +33,35 @@
   justify-content: space-between;
   padding: 8px;
   box-shadow: 0 2px 6px 0 $light-black;
-  cursor: pointer;
+
+  img {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .categories_header_title {
   width: 70%;
+}
+
+.category_input {
+  padding: 8px;
+  input {
+    display: block;
+    width: 200px;
+    padding: 0 8px;
+    height: 24px;
+    font-size: 14px;
+    font-weight: 700;
+    color: $black;
+  }
+
+  button {
+    margin-top: 4px;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    background: $white !important;
+  }
 }

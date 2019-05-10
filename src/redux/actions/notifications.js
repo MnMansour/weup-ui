@@ -41,3 +41,12 @@ export function unHoverSubCategory() {
     });
   }
 }
+
+export function enableDevMode(v) {
+  return (dispatch) => {
+    dispatch({
+      type: constants.DEV_MODE,
+      payload: v
+    });
+  }
+}
